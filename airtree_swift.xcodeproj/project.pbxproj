@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FDB50A5D1D92C19600627BED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB50A5C1D92C19600627BED /* AppDelegate.swift */; };
+		FDB50A5F1D92C19600627BED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB50A5E1D92C19600627BED /* ViewController.swift */; };
+		FDB50A621D92C19600627BED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB50A601D92C19600627BED /* Main.storyboard */; };
+		FDB50A641D92C19600627BED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB50A631D92C19600627BED /* Assets.xcassets */; };
+		FDB50A671D92C19600627BED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB50A651D92C19600627BED /* LaunchScreen.storyboard */; };
+		FDB50A721D92C19600627BED /* airtree_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB50A711D92C19600627BED /* airtree_swiftTests.swift */; };
+		FDB50A7D1D92C19600627BED /* airtree_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB50A7C1D92C19600627BED /* airtree_swiftUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDB50A6E1D92C19600627BED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDB50A511D92C19600627BED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDB50A581D92C19600627BED;
+			remoteInfo = airtree_swift;
+		};
+		FDB50A791D92C19600627BED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDB50A511D92C19600627BED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDB50A581D92C19600627BED;
+			remoteInfo = airtree_swift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FDB50A591D92C19600627BED /* airtree_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = airtree_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDB50A5C1D92C19600627BED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FDB50A5E1D92C19600627BED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FDB50A611D92C19600627BED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FDB50A631D92C19600627BED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDB50A661D92C19600627BED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FDB50A681D92C19600627BED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDB50A6D1D92C19600627BED /* airtree_swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = airtree_swiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDB50A711D92C19600627BED /* airtree_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = airtree_swiftTests.swift; sourceTree = "<group>"; };
+		FDB50A731D92C19600627BED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDB50A781D92C19600627BED /* airtree_swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = airtree_swiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDB50A7C1D92C19600627BED /* airtree_swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = airtree_swiftUITests.swift; sourceTree = "<group>"; };
+		FDB50A7E1D92C19600627BED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDB50A561D92C19600627BED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB50A6A1D92C19600627BED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB50A751D92C19600627BED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FDB50A501D92C19600627BED = {
+			isa = PBXGroup;
+			children = (
+				FDB50A5B1D92C19600627BED /* airtree_swift */,
+				FDB50A701D92C19600627BED /* airtree_swiftTests */,
+				FDB50A7B1D92C19600627BED /* airtree_swiftUITests */,
+				FDB50A5A1D92C19600627BED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FDB50A5A1D92C19600627BED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDB50A591D92C19600627BED /* airtree_swift.app */,
+				FDB50A6D1D92C19600627BED /* airtree_swiftTests.xctest */,
+				FDB50A781D92C19600627BED /* airtree_swiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDB50A5B1D92C19600627BED /* airtree_swift */ = {
+			isa = PBXGroup;
+			children = (
+				FDB50A5C1D92C19600627BED /* AppDelegate.swift */,
+				FDB50A5E1D92C19600627BED /* ViewController.swift */,
+				FDB50A601D92C19600627BED /* Main.storyboard */,
+				FDB50A631D92C19600627BED /* Assets.xcassets */,
+				FDB50A651D92C19600627BED /* LaunchScreen.storyboard */,
+				FDB50A681D92C19600627BED /* Info.plist */,
+			);
+			path = airtree_swift;
+			sourceTree = "<group>";
+		};
+		FDB50A701D92C19600627BED /* airtree_swiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDB50A711D92C19600627BED /* airtree_swiftTests.swift */,
+				FDB50A731D92C19600627BED /* Info.plist */,
+			);
+			path = airtree_swiftTests;
+			sourceTree = "<group>";
+		};
+		FDB50A7B1D92C19600627BED /* airtree_swiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FDB50A7C1D92C19600627BED /* airtree_swiftUITests.swift */,
+				FDB50A7E1D92C19600627BED /* Info.plist */,
+			);
+			path = airtree_swiftUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDB50A581D92C19600627BED /* airtree_swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDB50A811D92C19600627BED /* Build configuration list for PBXNativeTarget "airtree_swift" */;
+			buildPhases = (
+				FDB50A551D92C19600627BED /* Sources */,
+				FDB50A561D92C19600627BED /* Frameworks */,
+				FDB50A571D92C19600627BED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = airtree_swift;
+			productName = airtree_swift;
+			productReference = FDB50A591D92C19600627BED /* airtree_swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDB50A6C1D92C19600627BED /* airtree_swiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDB50A841D92C19600627BED /* Build configuration list for PBXNativeTarget "airtree_swiftTests" */;
+			buildPhases = (
+				FDB50A691D92C19600627BED /* Sources */,
+				FDB50A6A1D92C19600627BED /* Frameworks */,
+				FDB50A6B1D92C19600627BED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDB50A6F1D92C19600627BED /* PBXTargetDependency */,
+			);
+			name = airtree_swiftTests;
+			productName = airtree_swiftTests;
+			productReference = FDB50A6D1D92C19600627BED /* airtree_swiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FDB50A771D92C19600627BED /* airtree_swiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDB50A871D92C19600627BED /* Build configuration list for PBXNativeTarget "airtree_swiftUITests" */;
+			buildPhases = (
+				FDB50A741D92C19600627BED /* Sources */,
+				FDB50A751D92C19600627BED /* Frameworks */,
+				FDB50A761D92C19600627BED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDB50A7A1D92C19600627BED /* PBXTargetDependency */,
+			);
+			name = airtree_swiftUITests;
+			productName = airtree_swiftUITests;
+			productReference = FDB50A781D92C19600627BED /* airtree_swiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDB50A511D92C19600627BED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Bin Shen";
+				TargetAttributes = {
+					FDB50A581D92C19600627BED = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = VGXA77XL6T;
+						ProvisioningStyle = Automatic;
+					};
+					FDB50A6C1D92C19600627BED = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = VGXA77XL6T;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FDB50A581D92C19600627BED;
+					};
+					FDB50A771D92C19600627BED = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = VGXA77XL6T;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FDB50A581D92C19600627BED;
+					};
+				};
+			};
+			buildConfigurationList = FDB50A541D92C19600627BED /* Build configuration list for PBXProject "airtree_swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDB50A501D92C19600627BED;
+			productRefGroup = FDB50A5A1D92C19600627BED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDB50A581D92C19600627BED /* airtree_swift */,
+				FDB50A6C1D92C19600627BED /* airtree_swiftTests */,
+				FDB50A771D92C19600627BED /* airtree_swiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDB50A571D92C19600627BED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDB50A671D92C19600627BED /* LaunchScreen.storyboard in Resources */,
+				FDB50A641D92C19600627BED /* Assets.xcassets in Resources */,
+				FDB50A621D92C19600627BED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB50A6B1D92C19600627BED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB50A761D92C19600627BED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDB50A551D92C19600627BED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDB50A5F1D92C19600627BED /* ViewController.swift in Sources */,
+				FDB50A5D1D92C19600627BED /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB50A691D92C19600627BED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDB50A721D92C19600627BED /* airtree_swiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDB50A741D92C19600627BED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDB50A7D1D92C19600627BED /* airtree_swiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDB50A6F1D92C19600627BED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDB50A581D92C19600627BED /* airtree_swift */;
+			targetProxy = FDB50A6E1D92C19600627BED /* PBXContainerItemProxy */;
+		};
+		FDB50A7A1D92C19600627BED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDB50A581D92C19600627BED /* airtree_swift */;
+			targetProxy = FDB50A791D92C19600627BED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FDB50A601D92C19600627BED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDB50A611D92C19600627BED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FDB50A651D92C19600627BED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDB50A661D92C19600627BED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDB50A7F1D92C19600627BED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FDB50A801D92C19600627BED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDB50A821D92C19600627BED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VGXA77XL6T;
+				INFOPLIST_FILE = airtree_swift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.moral.airtree-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FDB50A831D92C19600627BED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VGXA77XL6T;
+				INFOPLIST_FILE = airtree_swift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.moral.airtree-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FDB50A851D92C19600627BED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = VGXA77XL6T;
+				INFOPLIST_FILE = airtree_swiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.moral.airtree-swiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/airtree_swift.app/airtree_swift";
+			};
+			name = Debug;
+		};
+		FDB50A861D92C19600627BED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = VGXA77XL6T;
+				INFOPLIST_FILE = airtree_swiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.moral.airtree-swiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/airtree_swift.app/airtree_swift";
+			};
+			name = Release;
+		};
+		FDB50A881D92C19600627BED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = VGXA77XL6T;
+				INFOPLIST_FILE = airtree_swiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.moral.airtree-swiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = airtree_swift;
+			};
+			name = Debug;
+		};
+		FDB50A891D92C19600627BED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = VGXA77XL6T;
+				INFOPLIST_FILE = airtree_swiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.moral.airtree-swiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = airtree_swift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDB50A541D92C19600627BED /* Build configuration list for PBXProject "airtree_swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDB50A7F1D92C19600627BED /* Debug */,
+				FDB50A801D92C19600627BED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDB50A811D92C19600627BED /* Build configuration list for PBXNativeTarget "airtree_swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDB50A821D92C19600627BED /* Debug */,
+				FDB50A831D92C19600627BED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FDB50A841D92C19600627BED /* Build configuration list for PBXNativeTarget "airtree_swiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDB50A851D92C19600627BED /* Debug */,
+				FDB50A861D92C19600627BED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FDB50A871D92C19600627BED /* Build configuration list for PBXNativeTarget "airtree_swiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDB50A881D92C19600627BED /* Debug */,
+				FDB50A891D92C19600627BED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDB50A511D92C19600627BED /* Project object */;
+}
