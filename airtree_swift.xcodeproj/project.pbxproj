@@ -79,6 +79,8 @@
 		FDB50B901D92C28F00627BED /* start_750x1334.png in Resources */ = {isa = PBXBuildFile; fileRef = FDB50B4E1D92C28F00627BED /* start_750x1334.png */; };
 		FDB50B911D92C28F00627BED /* start_1242x2208.png in Resources */ = {isa = PBXBuildFile; fileRef = FDB50B4F1D92C28F00627BED /* start_1242x2208.png */; };
 		FDB50B921D92C28F00627BED /* very.gif in Resources */ = {isa = PBXBuildFile; fileRef = FDB50B501D92C28F00627BED /* very.gif */; };
+		FDBEC3951D92CD9200D3DC69 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBEC3941D92CD9200D3DC69 /* RegisterController.swift */; };
+		FDBEC3971D92CDD800D3DC69 /* ForgetPwdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBEC3961D92CDD800D3DC69 /* ForgetPwdController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -177,6 +179,8 @@
 		FDB50B4E1D92C28F00627BED /* start_750x1334.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = start_750x1334.png; path = images/start_750x1334.png; sourceTree = "<group>"; };
 		FDB50B4F1D92C28F00627BED /* start_1242x2208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = start_1242x2208.png; path = images/start_1242x2208.png; sourceTree = "<group>"; };
 		FDB50B501D92C28F00627BED /* very.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = very.gif; path = images/very.gif; sourceTree = "<group>"; };
+		FDBEC3941D92CD9200D3DC69 /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		FDBEC3961D92CDD800D3DC69 /* ForgetPwdController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetPwdController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,11 +232,13 @@
 			isa = PBXGroup;
 			children = (
 				FDB50B0E1D92C27E00627BED /* images */,
-				FDB50A5C1D92C19600627BED /* AppDelegate.swift */,
-				FDB50A5E1D92C19600627BED /* ViewController.swift */,
 				FDB50A601D92C19600627BED /* Main.storyboard */,
 				FDB50A631D92C19600627BED /* Assets.xcassets */,
 				FDB50A681D92C19600627BED /* Info.plist */,
+				FDB50A5C1D92C19600627BED /* AppDelegate.swift */,
+				FDB50A5E1D92C19600627BED /* ViewController.swift */,
+				FDBEC3941D92CD9200D3DC69 /* RegisterController.swift */,
+				FDBEC3961D92CDD800D3DC69 /* ForgetPwdController.swift */,
 			);
 			path = airtree_swift;
 			sourceTree = "<group>";
@@ -532,6 +538,8 @@
 			files = (
 				FDB50A5F1D92C19600627BED /* ViewController.swift in Sources */,
 				FDB50A5D1D92C19600627BED /* AppDelegate.swift in Sources */,
+				FDBEC3971D92CDD800D3DC69 /* ForgetPwdController.swift in Sources */,
+				FDBEC3951D92CD9200D3DC69 /* RegisterController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
