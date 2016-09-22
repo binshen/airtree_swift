@@ -33,6 +33,9 @@
 		FD568AF11D939C10003CEB5F /* UIImageView+MKNKAdditions.h in Sources */ = {isa = PBXBuildFile; fileRef = FD568AE31D939C10003CEB5F /* UIImageView+MKNKAdditions.h */; };
 		FD568AF21D939C10003CEB5F /* UIImageView+MKNKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FD568AE41D939C10003CEB5F /* UIImageView+MKNKAdditions.m */; };
 		FD568AF51D93C0DF003CEB5F /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD568AF41D93C0DF003CEB5F /* PersonController.swift */; };
+		FD568AF71D93CD6B003CEB5F /* PersonNicknameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD568AF61D93CD6B003CEB5F /* PersonNicknameController.swift */; };
+		FD568AF91D93CD8A003CEB5F /* PersonPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD568AF81D93CD8A003CEB5F /* PersonPasswordController.swift */; };
+		FD568AFB1D93CD9A003CEB5F /* PersonFeedbackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD568AFA1D93CD9A003CEB5F /* PersonFeedbackController.swift */; };
 		FDB50A5D1D92C19600627BED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB50A5C1D92C19600627BED /* AppDelegate.swift */; };
 		FDB50A621D92C19600627BED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB50A601D92C19600627BED /* Main.storyboard */; };
 		FDB50A641D92C19600627BED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB50A631D92C19600627BED /* Assets.xcassets */; };
@@ -154,6 +157,9 @@
 		FD568AE41D939C10003CEB5F /* UIImageView+MKNKAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+MKNKAdditions.m"; path = "MKNetworkKit/Extensions/UIImageView+MKNKAdditions.m"; sourceTree = "<group>"; };
 		FD568AF31D93B6F2003CEB5F /* airtree_swift_Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "airtree_swift_Bridging-Header.h"; sourceTree = "<group>"; };
 		FD568AF41D93C0DF003CEB5F /* PersonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
+		FD568AF61D93CD6B003CEB5F /* PersonNicknameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonNicknameController.swift; sourceTree = "<group>"; };
+		FD568AF81D93CD8A003CEB5F /* PersonPasswordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonPasswordController.swift; sourceTree = "<group>"; };
+		FD568AFA1D93CD9A003CEB5F /* PersonFeedbackController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonFeedbackController.swift; sourceTree = "<group>"; };
 		FDB50A591D92C19600627BED /* airtree_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = airtree_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB50A5C1D92C19600627BED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDB50A5E1D92C19600627BED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -336,6 +342,9 @@
 				FDBEC3961D92CDD800D3DC69 /* ForgetPwdController.swift */,
 				FDF37E5F1D93664B00C00702 /* MainController.swift */,
 				FD568AF41D93C0DF003CEB5F /* PersonController.swift */,
+				FD568AF61D93CD6B003CEB5F /* PersonNicknameController.swift */,
+				FD568AF81D93CD8A003CEB5F /* PersonPasswordController.swift */,
+				FD568AFA1D93CD9A003CEB5F /* PersonFeedbackController.swift */,
 			);
 			path = airtree_swift;
 			sourceTree = "<group>";
@@ -667,9 +676,12 @@
 				FD568AD41D939BE7003CEB5F /* MKNetworkRequest.m in Sources */,
 				FD568AD51D939BE7003CEB5F /* MKObject.h in Sources */,
 				FD568AD61D939BE7003CEB5F /* MKObject.m in Sources */,
+				FD568AF71D93CD6B003CEB5F /* PersonNicknameController.swift in Sources */,
+				FD568AFB1D93CD9A003CEB5F /* PersonFeedbackController.swift in Sources */,
 				FDB50A5D1D92C19600627BED /* AppDelegate.swift in Sources */,
 				FD568A511D938B48003CEB5F /* ViewController.swift in Sources */,
 				FDBEC3971D92CDD800D3DC69 /* ForgetPwdController.swift in Sources */,
+				FD568AF91D93CD8A003CEB5F /* PersonPasswordController.swift in Sources */,
 				FDBEC3951D92CD9200D3DC69 /* RegisterController.swift in Sources */,
 				FDF37E601D93664B00C00702 /* MainController.swift in Sources */,
 			);
