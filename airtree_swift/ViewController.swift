@@ -16,11 +16,27 @@ class ViewController: UIViewController, UITextFieldDelegate, UIAlertViewDelegate
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
+
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "返回", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+        UINavigationBar.appearance().tintColor = UIColor.white
+
+        self.navigationController!.navigationBar.tintColor = UIColor(red: 20/255.0, green: 155/255.0, blue: 213/255.0, alpha: 1.0)
+        let attributes: [String : AnyObject] = [ NSForegroundColorAttributeName: UIColor.white ]
+        self.navigationController!.navigationBar.titleTextAttributes = attributes as? [String : AnyObject]
+
         TxtUsername.delegate = self
         TxtUsername.keyboardType = UIKeyboardType.numberPad
         TxtPassword.keyboardType = UIKeyboardType.alphabet
+
+        TxtUsername.text = "13999999999"
+        TxtPassword.text = "888888"
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated);
+
+        self.navigationItem.setHidesBackButton(true, animated: false)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
     }
 
     override func didReceiveMemoryWarning() {

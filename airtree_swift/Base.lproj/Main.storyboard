@@ -515,7 +515,6 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="clickDeviceButton:" destination="0jK-P3-5av" eventType="touchUpInside" id="ykb-TF-im2"/>
                                             <segue destination="a8p-BS-bSZ" kind="show" id="AXY-pJ-Sif"/>
                                         </connections>
                                     </button>
@@ -524,9 +523,6 @@
                                         <state key="normal" title=" 在线商城" image="ic_shop_30.png">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
-                                        <connections>
-                                            <action selector="clickOnlineShopButton:" destination="0jK-P3-5av" eventType="touchUpInside" id="C1i-m1-V6T"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -584,12 +580,11 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="BtnDevice" destination="x8d-nm-NGD" id="jTE-id-zc9"/>
-                        <outlet property="BtnOnlineShop" destination="Ho0-kD-B95" id="dgu-9M-7Jh"/>
-                        <outlet property="bottomView" destination="Kj4-g5-oPh" id="pig-r5-hCt"/>
-                        <outlet property="pageControl" destination="JWD-qz-RDh" id="jcW-lU-0uU"/>
-                        <outlet property="scrollView" destination="y5k-5G-jjc" id="yxc-70-bpR"/>
-                        <outlet property="spinner" destination="dju-Ez-J9l" id="FRM-oG-89N"/>
+                        <outlet property="BtnDevice" destination="x8d-nm-NGD" id="74h-fn-aH3"/>
+                        <outlet property="BtnOnlineShop" destination="Ho0-kD-B95" id="neW-qa-f97"/>
+                        <outlet property="pageControl" destination="JWD-qz-RDh" id="G98-lp-yep"/>
+                        <outlet property="scrollView" destination="y5k-5G-jjc" id="Q7y-Sr-9Vs"/>
+                        <outlet property="spinner" destination="dju-Ez-J9l" id="TEy-8J-CtR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vwg-Fh-jm1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -841,18 +836,18 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xyo-Za-0xB" id="gcC-6r-SWF">
-                                    <frame key="frameInset" width="342" height="50"/>
+                                    <frame key="frameInset" width="342" height="49"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3OT-qR-cXq">
-                                            <frame key="frameInset" minX="15" minY="15" width="31.5" height="19.5"/>
+                                            <frame key="frameInset" minX="15" minY="15" width="32" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gc3-li-JKI">
-                                            <frame key="frameInset" minX="284" minY="15" width="56" height="19.5"/>
+                                            <frame key="frameInset" minX="284" minY="15" width="56" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1070,18 +1065,18 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yKy-jE-Xyl" id="D8B-By-Pg9">
-                                    <frame key="frameInset" width="342" height="44"/>
+                                    <frame key="frameInset" width="342" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="T6i-9a-pj8">
-                                            <frame key="frameInset" minX="15" minY="12" width="31.5" height="19.5"/>
+                                            <frame key="frameInset" minX="15" minY="12" width="32" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TAX-Eo-xxn">
-                                            <frame key="frameInset" minX="298.5" minY="12" width="41.5" height="19.5"/>
+                                            <frame key="frameInset" minX="298" minY="12" width="42" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1237,7 +1232,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
                     <connections>
-                        <segue destination="0jK-P3-5av" kind="relationship" relationship="rootViewController" id="3Py-Rf-t9y"/>
+                        <segue destination="0jK-P3-5av" kind="relationship" relationship="rootViewController" id="LdE-Q4-odM"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L07-ao-ECh" userLabel="First Responder" sceneMemberID="firstResponder"/>

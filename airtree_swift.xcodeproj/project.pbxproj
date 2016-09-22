@@ -151,6 +151,7 @@
 		FD568AE21D939C10003CEB5F /* UIAlertView+MKNKAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+MKNKAdditions.m"; path = "MKNetworkKit/Extensions/UIAlertView+MKNKAdditions.m"; sourceTree = "<group>"; };
 		FD568AE31D939C10003CEB5F /* UIImageView+MKNKAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIImageView+MKNKAdditions.h"; path = "MKNetworkKit/Extensions/UIImageView+MKNKAdditions.h"; sourceTree = "<group>"; };
 		FD568AE41D939C10003CEB5F /* UIImageView+MKNKAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+MKNKAdditions.m"; path = "MKNetworkKit/Extensions/UIImageView+MKNKAdditions.m"; sourceTree = "<group>"; };
+		FD568AF31D93B6F2003CEB5F /* airtree_swift_Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "airtree_swift_Bridging-Header.h"; sourceTree = "<group>"; };
 		FDB50A591D92C19600627BED /* airtree_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = airtree_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB50A5C1D92C19600627BED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDB50A5E1D92C19600627BED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -301,6 +302,7 @@
 		FDB50A501D92C19600627BED = {
 			isa = PBXGroup;
 			children = (
+				FD568AF31D93B6F2003CEB5F /* airtree_swift_Bridging-Header.h */,
 				FDB50A5B1D92C19600627BED /* airtree_swift */,
 				FDB50A701D92C19600627BED /* airtree_swiftTests */,
 				FDB50A7B1D92C19600627BED /* airtree_swiftUITests */,
