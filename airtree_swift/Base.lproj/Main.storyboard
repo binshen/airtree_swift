@@ -806,7 +806,7 @@
         <!--个人设置-->
         <scene sceneID="xeP-dL-Coq">
             <objects>
-                <tableViewController id="pBU-G1-lgL" customClass="PersonController" sceneMemberID="viewController">
+                <tableViewController id="pBU-G1-lgL" customClass="PersonController" customModule="airtree_swift" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="14l-FN-Hao">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1401,6 +1401,6 @@
         <image name="logo2.png" width="850" height="374"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0Mm-Vd-xCQ"/>
+        <segue reference="rrx-3w-Sl8"/>
     </inferredMetricsTieBreakers>
 </document>
