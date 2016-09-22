@@ -46,6 +46,7 @@
 		FD61E5321D942B6800C9AA91 /* MonitorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD61E5311D942B6800C9AA91 /* MonitorController.swift */; };
 		FD61E5341D942B7700C9AA91 /* MonitorContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD61E5331D942B7700C9AA91 /* MonitorContentController.swift */; };
 		FD61E5371D942BCB00C9AA91 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = FD61E5361D942BCB00C9AA91 /* Reachability.m */; };
+		FD61E53D1D942D6700C9AA91 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = FD61E53C1D942D6700C9AA91 /* UIImage+animatedGIF.m */; };
 		FDB50A5D1D92C19600627BED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB50A5C1D92C19600627BED /* AppDelegate.swift */; };
 		FDB50A621D92C19600627BED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB50A601D92C19600627BED /* Main.storyboard */; };
 		FDB50A641D92C19600627BED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB50A631D92C19600627BED /* Assets.xcassets */; };
@@ -181,6 +182,11 @@
 		FD61E5331D942B7700C9AA91 /* MonitorContentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonitorContentController.swift; sourceTree = "<group>"; };
 		FD61E5351D942BCB00C9AA91 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		FD61E5361D942BCB00C9AA91 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		FD61E5381D942D6700C9AA91 /* HFSmartLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFSmartLink.h; sourceTree = "<group>"; };
+		FD61E5391D942D6700C9AA91 /* HFSmartLinkDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFSmartLinkDeviceInfo.h; sourceTree = "<group>"; };
+		FD61E53A1D942D6700C9AA91 /* smartlinklib_7x.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smartlinklib_7x.h; sourceTree = "<group>"; };
+		FD61E53B1D942D6700C9AA91 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		FD61E53C1D942D6700C9AA91 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
 		FDB50A591D92C19600627BED /* airtree_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = airtree_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB50A5C1D92C19600627BED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDB50A5E1D92C19600627BED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -336,9 +342,14 @@
 				FDB50A7B1D92C19600627BED /* airtree_swiftUITests */,
 				FDF37E621D93708400C00702 /* Frameworks */,
 				FDB50A5A1D92C19600627BED /* Products */,
+				FD568AF31D93B6F2003CEB5F /* airtree_swift_Bridging-Header.h */,
 				FD61E5351D942BCB00C9AA91 /* Reachability.h */,
 				FD61E5361D942BCB00C9AA91 /* Reachability.m */,
-				FD568AF31D93B6F2003CEB5F /* airtree_swift_Bridging-Header.h */,
+				FD61E5381D942D6700C9AA91 /* HFSmartLink.h */,
+				FD61E5391D942D6700C9AA91 /* HFSmartLinkDeviceInfo.h */,
+				FD61E53A1D942D6700C9AA91 /* smartlinklib_7x.h */,
+				FD61E53B1D942D6700C9AA91 /* UIImage+animatedGIF.h */,
+				FD61E53C1D942D6700C9AA91 /* UIImage+animatedGIF.m */,
 			);
 			sourceTree = "<group>";
 		};
@@ -701,6 +712,7 @@
 				FD568AEF1D939C10003CEB5F /* UIAlertView+MKNKAdditions.h in Sources */,
 				FD61E5321D942B6800C9AA91 /* MonitorController.swift in Sources */,
 				FD568AF01D939C10003CEB5F /* UIAlertView+MKNKAdditions.m in Sources */,
+				FD61E53D1D942D6700C9AA91 /* UIImage+animatedGIF.m in Sources */,
 				FD568AF11D939C10003CEB5F /* UIImageView+MKNKAdditions.h in Sources */,
 				FD568AF21D939C10003CEB5F /* UIImageView+MKNKAdditions.m in Sources */,
 				FD568ACE1D939BE7003CEB5F /* MKCache.h in Sources */,

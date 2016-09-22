@@ -11,5 +11,9 @@
 
 #import "MKNetworkKit.h"
 #import "Reachability.h"
+#import "UIImage+animatedGIF.h"
+#import "smartlinklib_7x.h"
+#import "HFSmartLink.h"
+#import "HFSmartLinkDeviceInfo.h"
 
 #endif /* airtree_swift_Bridging_Header_h */
