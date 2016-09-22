@@ -874,7 +874,7 @@
         <!--设备管理-->
         <scene sceneID="6J0-eJ-hwp">
             <objects>
-                <tableViewController storyboardIdentifier="DeviceManageController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="a8p-BS-bSZ" customClass="DeviceManageController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="DeviceManageController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="a8p-BS-bSZ" customClass="DeviceManageController" customModule="airtree_swift" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="qDi-X3-qUR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1398,7 +1398,7 @@
         <image name="logo2.png" width="850" height="374"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eFe-IK-Rqu"/>
+        <segue reference="JG9-lS-jxI"/>
         <segue reference="rrx-3w-Sl8"/>
     </inferredMetricsTieBreakers>
 </document>

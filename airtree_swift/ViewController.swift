@@ -52,7 +52,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIAlertViewDelegate
         let request = MKNetworkRequest(urlString: baseURL + "/user/login", params: params, bodyData: nil, httpMethod: "POST");
         request? .addCompletionHandler { response in
             let jsonStr = response?.responseAsString
-            var data = jsonStr!.data(using: .utf8)!
+            let data = jsonStr!.data(using: .utf8)!
             if let parsedData = try? JSONSerialization.jsonObject(with: data) as! [String:Any] {
                 let user = parsedData["user"] as? [String:Any]
                 if(user == nil) {
