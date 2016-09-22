@@ -81,6 +81,7 @@
 		FDB50B921D92C28F00627BED /* very.gif in Resources */ = {isa = PBXBuildFile; fileRef = FDB50B501D92C28F00627BED /* very.gif */; };
 		FDBEC3951D92CD9200D3DC69 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBEC3941D92CD9200D3DC69 /* RegisterController.swift */; };
 		FDBEC3971D92CDD800D3DC69 /* ForgetPwdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBEC3961D92CDD800D3DC69 /* ForgetPwdController.swift */; };
+		FDF37E601D93664B00C00702 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF37E5F1D93664B00C00702 /* MainController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -181,6 +182,7 @@
 		FDB50B501D92C28F00627BED /* very.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = very.gif; path = images/very.gif; sourceTree = "<group>"; };
 		FDBEC3941D92CD9200D3DC69 /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		FDBEC3961D92CDD800D3DC69 /* ForgetPwdController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetPwdController.swift; sourceTree = "<group>"; };
+		FDF37E5F1D93664B00C00702 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +241,7 @@
 				FDB50A5E1D92C19600627BED /* ViewController.swift */,
 				FDBEC3941D92CD9200D3DC69 /* RegisterController.swift */,
 				FDBEC3961D92CDD800D3DC69 /* ForgetPwdController.swift */,
+				FDF37E5F1D93664B00C00702 /* MainController.swift */,
 			);
 			path = airtree_swift;
 			sourceTree = "<group>";
@@ -540,6 +543,7 @@
 				FDB50A5D1D92C19600627BED /* AppDelegate.swift in Sources */,
 				FDBEC3971D92CDD800D3DC69 /* ForgetPwdController.swift in Sources */,
 				FDBEC3951D92CD9200D3DC69 /* RegisterController.swift in Sources */,
+				FDF37E601D93664B00C00702 /* MainController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var TxtUsername: UITextField!
     @IBOutlet weak var TxtPassword: UITextField!
@@ -17,6 +17,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        TxtUsername.delegate = self
+        TxtUsername.keyboardType = UIKeyboardType.numberPad
+        TxtPassword.keyboardType = UIKeyboardType.alphabet
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,6 +30,13 @@ class ViewController: UIViewController {
 
     @IBAction func clickLoginButton(_ sender: UIButton) {
         print(TxtUsername.text)
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if ((textField.text?.characters.count)! - range.length + string.characters.count) > 11 {
+            return false
+        }
+        return true
     }
 }
 
