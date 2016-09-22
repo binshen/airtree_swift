@@ -21,8 +21,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIAlertViewDelegate
         UINavigationBar.appearance().tintColor = UIColor.white
 
         self.navigationController!.navigationBar.barTintColor = UIColor(red: 20/255.0, green: 155/255.0, blue: 213/255.0, alpha: 1.0)
-        let attributes: [String : AnyObject] = [ NSForegroundColorAttributeName: UIColor.white ]
-        self.navigationController!.navigationBar.titleTextAttributes = attributes as? [String : AnyObject]
+        self.navigationController!.navigationBar.titleTextAttributes = [ NSForegroundColorAttributeName: UIColor.white ]
 
         TxtUsername.delegate = self
         TxtUsername.keyboardType = UIKeyboardType.numberPad

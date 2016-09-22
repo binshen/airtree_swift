@@ -46,7 +46,7 @@ class PersonController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let identifier = "PersonCell";
-        var cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
 //        if(cell == nil) {
 //            cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: identifier)
 //        }

@@ -24,11 +24,11 @@ class DeviceInfoController: UITableViewController, UIAlertViewDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true);
 
-        var indexPath = IndexPath(row: 1, section: 0)
-        var cell = self.tableView.cellForRow(at: indexPath)
+        let indexPath = IndexPath(row: 1, section: 0)
+        let cell = self.tableView.cellForRow(at: indexPath)
         cell?.detailTextLabel?.text = "12312321"
 
-        self.timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: Selector("autoRefreshData"), userInfo: nil, repeats: true)
+        self.timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(autoRefreshData), userInfo: nil, repeats: true)
     }
 
     override func viewDidDisappear(_ animated: Bool) {
@@ -84,10 +84,10 @@ class DeviceInfoController: UITableViewController, UIAlertViewDelegate {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let index = indexPath.row
         if(index == 1) {
-            var viewController = self.storyboard!.instantiateViewController(withIdentifier: "DeviceDetailReviseController")
+            let viewController = self.storyboard!.instantiateViewController(withIdentifier: "DeviceDetailReviseController")
             self.navigationController?.pushViewController(viewController, animated: true)
         } else if(index == 4) {
-            var viewController = self.storyboard!.instantiateViewController(withIdentifier: "HistoryController")
+            let viewController = self.storyboard!.instantiateViewController(withIdentifier: "HistoryController")
             self.navigationController?.pushViewController(viewController, animated: true)
         }
     }

@@ -26,7 +26,7 @@ class DeviceManageController: UITableViewController {
         super.viewWillAppear(true);
         
         self.autoRefreshData()
-        self.timer = Timer.scheduledTimer(timeInterval: 6, target: self, selector: Selector("autoRefreshData"), userInfo: nil, repeats: true)
+        self.timer = Timer.scheduledTimer(timeInterval: 6, target: self, selector: #selector(autoRefreshData), userInfo: nil, repeats: true)
     }
 
     override func viewDidDisappear(_ animated: Bool) {
