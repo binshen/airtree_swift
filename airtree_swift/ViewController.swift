@@ -20,7 +20,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIAlertViewDelegate
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "返回", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
         UINavigationBar.appearance().tintColor = UIColor.white
 
-        self.navigationController!.navigationBar.tintColor = UIColor(red: 20/255.0, green: 155/255.0, blue: 213/255.0, alpha: 1.0)
+        self.navigationController!.navigationBar.barTintColor = UIColor(red: 20/255.0, green: 155/255.0, blue: 213/255.0, alpha: 1.0)
         let attributes: [String : AnyObject] = [ NSForegroundColorAttributeName: UIColor.white ]
         self.navigationController!.navigationBar.titleTextAttributes = attributes as? [String : AnyObject]
 
