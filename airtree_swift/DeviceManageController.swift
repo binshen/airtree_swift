@@ -10,6 +10,8 @@ import UIKit
 
 class DeviceManageController: UITableViewController {
 
+    var devices = [AnyObject]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,19 +39,12 @@ class DeviceManageController: UITableViewController {
         let request = MKNetworkRequest(urlString: baseURL + "/user/\(userID)/get_device_info", params: nil, bodyData: nil, httpMethod: "GET");
         request? .addCompletionHandler { response in
             let jsonStr = response?.responseAsString
-            print(jsonStr)
             let data = jsonStr!.data(using: .utf8)!
-//            if let parsedData = try? JSONSerialization.jsonObject(with: data) as! [String:Any] {
-//                let user = parsedData["user"] as? [String:Any]
-//                if(user == nil) {
-//                    let alert: UIAlertView = UIAlertView(title: "登录失败", message: "输入的用户名或密码错误.", delegate: self, cancelButtonTitle: "OK")
-//                    alert.show()
-//                } else {
-//                    let nav = self.storyboard!.instantiateViewController(withIdentifier: "NavMainViewController")
-//                    self.present(nav, animated: true)
-//                }
-//                print(parsedData)
-//            }
+            if let parsedData = try? JSONSerialization.jsonObject(with: data) as![AnyObject] {
+                self.devices = parsedData
+            }
+            self.tableView.reloadData()
+            print(self.devices)
         }
         let engine = MKNetworkHost()
         engine.start(request)
@@ -64,19 +59,33 @@ class DeviceManageController: UITableViewController {
 //    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return self.devices.count
     }
 
-    /*
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DeviceMngCell", for: indexPath)
+        let index = indexPath.row
+        let device = self.devices[index] as? NSDictionary
+        cell.textLabel?.text = device?.value(forKey: "name") as? String == nil ? device?.value(forKey: "mac") as? String : device?.value(forKey: "name") as! String
+        cell.detailTextLabel?.text = device?["status"] as! Int == 1 ? "云端在线" : "不在线"
         return cell
     }
-    */
+
+    override public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 65
+    }
+
+
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.separatorInset = UIEdgeInsets.zero
+    }
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("+++++++++++++++++++++++")
+        print(self.devices[indexPath.row])
+    }
+
 
     /*
     // Override to support conditional editing of the table view.
