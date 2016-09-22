@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD568A4C1D9387CC003CEB5F /* MKNetworkKit in Resources */ = {isa = PBXBuildFile; fileRef = FD568A4B1D9387CC003CEB5F /* MKNetworkKit */; };
+		FD568A511D938B48003CEB5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB50A5E1D92C19600627BED /* ViewController.swift */; };
 		FDB50A5D1D92C19600627BED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB50A5C1D92C19600627BED /* AppDelegate.swift */; };
-		FDB50A5F1D92C19600627BED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB50A5E1D92C19600627BED /* ViewController.swift */; };
 		FDB50A621D92C19600627BED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB50A601D92C19600627BED /* Main.storyboard */; };
 		FDB50A641D92C19600627BED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB50A631D92C19600627BED /* Assets.xcassets */; };
 		FDB50A721D92C19600627BED /* airtree_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB50A711D92C19600627BED /* airtree_swiftTests.swift */; };
@@ -82,6 +83,7 @@
 		FDBEC3951D92CD9200D3DC69 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBEC3941D92CD9200D3DC69 /* RegisterController.swift */; };
 		FDBEC3971D92CDD800D3DC69 /* ForgetPwdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBEC3961D92CDD800D3DC69 /* ForgetPwdController.swift */; };
 		FDF37E601D93664B00C00702 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF37E5F1D93664B00C00702 /* MainController.swift */; };
+		FDF37E731D93845000C00702 /* MKNetworkKit in Resources */ = {isa = PBXBuildFile; fileRef = FDF37E721D93845000C00702 /* MKNetworkKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +104,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD568A4B1D9387CC003CEB5F /* MKNetworkKit */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MKNetworkKit; sourceTree = "<group>"; };
 		FDB50A591D92C19600627BED /* airtree_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = airtree_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB50A5C1D92C19600627BED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDB50A5E1D92C19600627BED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -183,6 +186,8 @@
 		FDBEC3941D92CD9200D3DC69 /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		FDBEC3961D92CDD800D3DC69 /* ForgetPwdController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetPwdController.swift; sourceTree = "<group>"; };
 		FDF37E5F1D93664B00C00702 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		FDF37E6F1D9383BF00C00702 /* airtree_swift_Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "airtree_swift_Bridging-Header.h"; sourceTree = "<group>"; };
+		FDF37E721D93845000C00702 /* MKNetworkKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MKNetworkKit; path = /Users/bin.shen/ios_dev/airtree_swift/MKNetworkKit; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,9 +218,11 @@
 		FDB50A501D92C19600627BED = {
 			isa = PBXGroup;
 			children = (
+				FDF37E6F1D9383BF00C00702 /* airtree_swift_Bridging-Header.h */,
 				FDB50A5B1D92C19600627BED /* airtree_swift */,
 				FDB50A701D92C19600627BED /* airtree_swiftTests */,
 				FDB50A7B1D92C19600627BED /* airtree_swiftUITests */,
+				FDF37E621D93708400C00702 /* Frameworks */,
 				FDB50A5A1D92C19600627BED /* Products */,
 			);
 			sourceTree = "<group>";
@@ -335,6 +342,14 @@
 				FDB50B501D92C28F00627BED /* very.gif */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		FDF37E621D93708400C00702 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD568A4B1D9387CC003CEB5F /* MKNetworkKit */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -490,12 +505,14 @@
 				FDB50B611D92C28F00627BED /* ic_ele_2.png in Resources */,
 				FDB50B511D92C28F00627BED /* bg_jiaquan_s.png in Resources */,
 				FDB50B8F1D92C28F00627BED /* start_640x1136.png in Resources */,
+				FDF37E731D93845000C00702 /* MKNetworkKit in Resources */,
 				FDB50B571D92C28F00627BED /* bg_wendu_s.png in Resources */,
 				FDB50B671D92C28F00627BED /* ic_ele_5.png in Resources */,
 				FDB50A621D92C19600627BED /* Main.storyboard in Resources */,
 				FDB50B861D92C28F00627BED /* need.gif in Resources */,
 				FDB50B8E1D92C28F00627BED /* start_640x960.png in Resources */,
 				FDB50B6D1D92C28F00627BED /* ic_ele_n4s.png in Resources */,
+				FD568A4C1D9387CC003CEB5F /* MKNetworkKit in Resources */,
 				FDB50B7B1D92C28F00627BED /* ic_shop_w_25.png in Resources */,
 				FDB50B651D92C28F00627BED /* ic_ele_4.png in Resources */,
 				FDB50B621D92C28F00627BED /* ic_ele_2s.png in Resources */,
@@ -539,8 +556,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDB50A5F1D92C19600627BED /* ViewController.swift in Sources */,
 				FDB50A5D1D92C19600627BED /* AppDelegate.swift in Sources */,
+				FD568A511D938B48003CEB5F /* ViewController.swift in Sources */,
 				FDBEC3971D92CDD800D3DC69 /* ForgetPwdController.swift in Sources */,
 				FDBEC3951D92CD9200D3DC69 /* RegisterController.swift in Sources */,
 				FDF37E601D93664B00C00702 /* MainController.swift in Sources */,
@@ -687,11 +704,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = VGXA77XL6T;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = airtree_swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.moral.airtree-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/**";
+				SWIFT_OBJC_BRIDGING_HEADER = "airtree_swift_Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -701,11 +723,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = VGXA77XL6T;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = airtree_swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.moral.airtree-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/**";
+				SWIFT_OBJC_BRIDGING_HEADER = "airtree_swift_Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};
