@@ -523,6 +523,9 @@
                                         <state key="normal" title=" 在线商城" image="ic_shop_30.png">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="vfc-Fw-YnB" kind="show" id="eFe-IK-Rqu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -594,7 +597,7 @@
         <!--在线商城-->
         <scene sceneID="hq1-Io-44k">
             <objects>
-                <viewController storyboardIdentifier="ShopController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vfc-Fw-YnB" customClass="ShopController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShopController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vfc-Fw-YnB" customClass="ShopController" customModule="airtree_swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1gs-RT-nQk"/>
                         <viewControllerLayoutGuide type="bottom" id="9k9-lY-9dr"/>
@@ -617,7 +620,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="在线商城" id="FcJ-Zs-ODw"/>
                     <connections>
-                        <outlet property="WebView" destination="RmL-kn-Tpk" id="v0b-8S-jxk"/>
+                        <outlet property="WebView" destination="RmL-kn-Tpk" id="Iar-qY-aCj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fKk-sD-7Do" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1395,6 +1398,7 @@
         <image name="logo2.png" width="850" height="374"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="eFe-IK-Rqu"/>
         <segue reference="rrx-3w-Sl8"/>
     </inferredMetricsTieBreakers>
 </document>

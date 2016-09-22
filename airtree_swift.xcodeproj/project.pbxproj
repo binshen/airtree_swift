@@ -36,6 +36,8 @@
 		FD568AF71D93CD6B003CEB5F /* PersonNicknameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD568AF61D93CD6B003CEB5F /* PersonNicknameController.swift */; };
 		FD568AF91D93CD8A003CEB5F /* PersonPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD568AF81D93CD8A003CEB5F /* PersonPasswordController.swift */; };
 		FD568AFB1D93CD9A003CEB5F /* PersonFeedbackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD568AFA1D93CD9A003CEB5F /* PersonFeedbackController.swift */; };
+		FD568AFD1D93CFFF003CEB5F /* ShopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD568AFC1D93CFFF003CEB5F /* ShopController.swift */; };
+		FD568AFF1D93D597003CEB5F /* DeviceManageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD568AFE1D93D597003CEB5F /* DeviceManageController.swift */; };
 		FDB50A5D1D92C19600627BED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB50A5C1D92C19600627BED /* AppDelegate.swift */; };
 		FDB50A621D92C19600627BED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB50A601D92C19600627BED /* Main.storyboard */; };
 		FDB50A641D92C19600627BED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB50A631D92C19600627BED /* Assets.xcassets */; };
@@ -160,6 +162,8 @@
 		FD568AF61D93CD6B003CEB5F /* PersonNicknameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonNicknameController.swift; sourceTree = "<group>"; };
 		FD568AF81D93CD8A003CEB5F /* PersonPasswordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonPasswordController.swift; sourceTree = "<group>"; };
 		FD568AFA1D93CD9A003CEB5F /* PersonFeedbackController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonFeedbackController.swift; sourceTree = "<group>"; };
+		FD568AFC1D93CFFF003CEB5F /* ShopController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopController.swift; sourceTree = "<group>"; };
+		FD568AFE1D93D597003CEB5F /* DeviceManageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceManageController.swift; sourceTree = "<group>"; };
 		FDB50A591D92C19600627BED /* airtree_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = airtree_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB50A5C1D92C19600627BED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDB50A5E1D92C19600627BED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -345,6 +349,8 @@
 				FD568AF61D93CD6B003CEB5F /* PersonNicknameController.swift */,
 				FD568AF81D93CD8A003CEB5F /* PersonPasswordController.swift */,
 				FD568AFA1D93CD9A003CEB5F /* PersonFeedbackController.swift */,
+				FD568AFC1D93CFFF003CEB5F /* ShopController.swift */,
+				FD568AFE1D93D597003CEB5F /* DeviceManageController.swift */,
 			);
 			path = airtree_swift;
 			sourceTree = "<group>";
@@ -662,6 +668,7 @@
 				FD568AEB1D939C10003CEB5F /* NSMutableDictionary+MKNKAdditions.h in Sources */,
 				FD568AEC1D939C10003CEB5F /* NSMutableDictionary+MKNKAdditions.m in Sources */,
 				FD568AED1D939C10003CEB5F /* NSString+MKNKAdditions.h in Sources */,
+				FD568AFD1D93CFFF003CEB5F /* ShopController.swift in Sources */,
 				FD568AEE1D939C10003CEB5F /* NSString+MKNKAdditions.m in Sources */,
 				FD568AEF1D939C10003CEB5F /* UIAlertView+MKNKAdditions.h in Sources */,
 				FD568AF01D939C10003CEB5F /* UIAlertView+MKNKAdditions.m in Sources */,
@@ -683,6 +690,7 @@
 				FDBEC3971D92CDD800D3DC69 /* ForgetPwdController.swift in Sources */,
 				FD568AF91D93CD8A003CEB5F /* PersonPasswordController.swift in Sources */,
 				FDBEC3951D92CD9200D3DC69 /* RegisterController.swift in Sources */,
+				FD568AFF1D93D597003CEB5F /* DeviceManageController.swift in Sources */,
 				FDF37E601D93664B00C00702 /* MainController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
