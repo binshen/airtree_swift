@@ -884,18 +884,18 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DN5-J3-rgC" id="s4g-9b-Myu">
-                                    <frame key="frameInset" width="342" height="43.5"/>
+                                    <frame key="frameInset" width="342" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Pn2-TQ-IHX">
-                                            <frame key="frameInset" minX="55" minY="12" width="31.5" height="19.5"/>
+                                            <frame key="frameInset" minX="55" minY="12" width="32" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ALl-sp-Usy">
-                                            <frame key="frameInset" minX="284" minY="12" width="56" height="19.5"/>
+                                            <frame key="frameInset" minX="284" minY="12" width="56" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1032,7 +1032,7 @@
         <!--设备详细-->
         <scene sceneID="9OD-KH-Jy7">
             <objects>
-                <tableViewController id="6Va-wh-HaL" customClass="DeviceInfoController" sceneMemberID="viewController">
+                <tableViewController id="6Va-wh-HaL" customClass="DeviceInfoController" customModule="airtree_swift" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="1LA-62-xZh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1090,7 +1090,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="设备详细" id="HdQ-C1-Txm"/>
                     <connections>
-                        <outlet property="bottomView" destination="De5-IO-We3" id="4qp-wu-1Q5"/>
+                        <outlet property="bottomView" destination="De5-IO-We3" id="YLP-md-ire"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="chJ-PS-1Hn" userLabel="First Responder" sceneMemberID="firstResponder"/>

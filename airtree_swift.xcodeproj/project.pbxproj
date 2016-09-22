@@ -38,6 +38,14 @@
 		FD568AFB1D93CD9A003CEB5F /* PersonFeedbackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD568AFA1D93CD9A003CEB5F /* PersonFeedbackController.swift */; };
 		FD568AFD1D93CFFF003CEB5F /* ShopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD568AFC1D93CFFF003CEB5F /* ShopController.swift */; };
 		FD568AFF1D93D597003CEB5F /* DeviceManageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD568AFE1D93D597003CEB5F /* DeviceManageController.swift */; };
+		FD61E5281D9424F500C9AA91 /* DeviceInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD61E5271D9424F500C9AA91 /* DeviceInfoController.swift */; };
+		FD61E52A1D942AF100C9AA91 /* DeviceDetailReviseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD61E5291D942AF100C9AA91 /* DeviceDetailReviseController.swift */; };
+		FD61E52C1D942B0300C9AA91 /* HistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD61E52B1D942B0300C9AA91 /* HistoryController.swift */; };
+		FD61E52E1D942B2D00C9AA91 /* DeviceAddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD61E52D1D942B2D00C9AA91 /* DeviceAddController.swift */; };
+		FD61E5301D942B5400C9AA91 /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD61E52F1D942B5400C9AA91 /* DeviceViewController.swift */; };
+		FD61E5321D942B6800C9AA91 /* MonitorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD61E5311D942B6800C9AA91 /* MonitorController.swift */; };
+		FD61E5341D942B7700C9AA91 /* MonitorContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD61E5331D942B7700C9AA91 /* MonitorContentController.swift */; };
+		FD61E5371D942BCB00C9AA91 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = FD61E5361D942BCB00C9AA91 /* Reachability.m */; };
 		FDB50A5D1D92C19600627BED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB50A5C1D92C19600627BED /* AppDelegate.swift */; };
 		FDB50A621D92C19600627BED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB50A601D92C19600627BED /* Main.storyboard */; };
 		FDB50A641D92C19600627BED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB50A631D92C19600627BED /* Assets.xcassets */; };
@@ -164,6 +172,15 @@
 		FD568AFA1D93CD9A003CEB5F /* PersonFeedbackController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonFeedbackController.swift; sourceTree = "<group>"; };
 		FD568AFC1D93CFFF003CEB5F /* ShopController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopController.swift; sourceTree = "<group>"; };
 		FD568AFE1D93D597003CEB5F /* DeviceManageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceManageController.swift; sourceTree = "<group>"; };
+		FD61E5271D9424F500C9AA91 /* DeviceInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceInfoController.swift; sourceTree = "<group>"; };
+		FD61E5291D942AF100C9AA91 /* DeviceDetailReviseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceDetailReviseController.swift; sourceTree = "<group>"; };
+		FD61E52B1D942B0300C9AA91 /* HistoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryController.swift; sourceTree = "<group>"; };
+		FD61E52D1D942B2D00C9AA91 /* DeviceAddController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceAddController.swift; sourceTree = "<group>"; };
+		FD61E52F1D942B5400C9AA91 /* DeviceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceViewController.swift; sourceTree = "<group>"; };
+		FD61E5311D942B6800C9AA91 /* MonitorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonitorController.swift; sourceTree = "<group>"; };
+		FD61E5331D942B7700C9AA91 /* MonitorContentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonitorContentController.swift; sourceTree = "<group>"; };
+		FD61E5351D942BCB00C9AA91 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		FD61E5361D942BCB00C9AA91 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		FDB50A591D92C19600627BED /* airtree_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = airtree_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB50A5C1D92C19600627BED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDB50A5E1D92C19600627BED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -319,6 +336,8 @@
 				FDB50A7B1D92C19600627BED /* airtree_swiftUITests */,
 				FDF37E621D93708400C00702 /* Frameworks */,
 				FDB50A5A1D92C19600627BED /* Products */,
+				FD61E5351D942BCB00C9AA91 /* Reachability.h */,
+				FD61E5361D942BCB00C9AA91 /* Reachability.m */,
 				FD568AF31D93B6F2003CEB5F /* airtree_swift_Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
@@ -351,6 +370,13 @@
 				FD568AFA1D93CD9A003CEB5F /* PersonFeedbackController.swift */,
 				FD568AFC1D93CFFF003CEB5F /* ShopController.swift */,
 				FD568AFE1D93D597003CEB5F /* DeviceManageController.swift */,
+				FD61E5271D9424F500C9AA91 /* DeviceInfoController.swift */,
+				FD61E5291D942AF100C9AA91 /* DeviceDetailReviseController.swift */,
+				FD61E52B1D942B0300C9AA91 /* HistoryController.swift */,
+				FD61E52D1D942B2D00C9AA91 /* DeviceAddController.swift */,
+				FD61E52F1D942B5400C9AA91 /* DeviceViewController.swift */,
+				FD61E5311D942B6800C9AA91 /* MonitorController.swift */,
+				FD61E5331D942B7700C9AA91 /* MonitorContentController.swift */,
 			);
 			path = airtree_swift;
 			sourceTree = "<group>";
@@ -666,11 +692,14 @@
 				FD568AE91D939C10003CEB5F /* NSHTTPURLResponse+MKNKAdditions.h in Sources */,
 				FD568AEA1D939C10003CEB5F /* NSHTTPURLResponse+MKNKAdditions.m in Sources */,
 				FD568AEB1D939C10003CEB5F /* NSMutableDictionary+MKNKAdditions.h in Sources */,
+				FD61E52C1D942B0300C9AA91 /* HistoryController.swift in Sources */,
 				FD568AEC1D939C10003CEB5F /* NSMutableDictionary+MKNKAdditions.m in Sources */,
+				FD61E5371D942BCB00C9AA91 /* Reachability.m in Sources */,
 				FD568AED1D939C10003CEB5F /* NSString+MKNKAdditions.h in Sources */,
 				FD568AFD1D93CFFF003CEB5F /* ShopController.swift in Sources */,
 				FD568AEE1D939C10003CEB5F /* NSString+MKNKAdditions.m in Sources */,
 				FD568AEF1D939C10003CEB5F /* UIAlertView+MKNKAdditions.h in Sources */,
+				FD61E5321D942B6800C9AA91 /* MonitorController.swift in Sources */,
 				FD568AF01D939C10003CEB5F /* UIAlertView+MKNKAdditions.m in Sources */,
 				FD568AF11D939C10003CEB5F /* UIImageView+MKNKAdditions.h in Sources */,
 				FD568AF21D939C10003CEB5F /* UIImageView+MKNKAdditions.m in Sources */,
@@ -680,6 +709,7 @@
 				FD568AD11D939BE7003CEB5F /* MKNetworkHost.m in Sources */,
 				FD568AD21D939BE7003CEB5F /* MKNetworkKit.h in Sources */,
 				FD568AD31D939BE7003CEB5F /* MKNetworkRequest.h in Sources */,
+				FD61E52E1D942B2D00C9AA91 /* DeviceAddController.swift in Sources */,
 				FD568AD41D939BE7003CEB5F /* MKNetworkRequest.m in Sources */,
 				FD568AD51D939BE7003CEB5F /* MKObject.h in Sources */,
 				FD568AD61D939BE7003CEB5F /* MKObject.m in Sources */,
@@ -688,10 +718,14 @@
 				FDB50A5D1D92C19600627BED /* AppDelegate.swift in Sources */,
 				FD568A511D938B48003CEB5F /* ViewController.swift in Sources */,
 				FDBEC3971D92CDD800D3DC69 /* ForgetPwdController.swift in Sources */,
+				FD61E5341D942B7700C9AA91 /* MonitorContentController.swift in Sources */,
 				FD568AF91D93CD8A003CEB5F /* PersonPasswordController.swift in Sources */,
 				FDBEC3951D92CD9200D3DC69 /* RegisterController.swift in Sources */,
 				FD568AFF1D93D597003CEB5F /* DeviceManageController.swift in Sources */,
+				FD61E5301D942B5400C9AA91 /* DeviceViewController.swift in Sources */,
 				FDF37E601D93664B00C00702 /* MainController.swift in Sources */,
+				FD61E52A1D942AF100C9AA91 /* DeviceDetailReviseController.swift in Sources */,
+				FD61E5281D9424F500C9AA91 /* DeviceInfoController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
