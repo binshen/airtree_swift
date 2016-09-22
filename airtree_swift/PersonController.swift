@@ -10,14 +10,22 @@ import UIKit
 
 class PersonController: UITableViewController {
 
+    @IBOutlet var PersonTableView: UITableView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "返回", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+        UINavigationBar.appearance().tintColor = UIColor.white
+        
+        self.PersonTableView.delegate = self
+        self.PersonTableView.dataSource = self
+    }
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated);
+
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,25 +35,59 @@ class PersonController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return 0
+//    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 5
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let identifier = "PersonCell";
+        var cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
+//        if(cell == nil) {
+//            cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: identifier)
+//        }
+        switch indexPath.row {
+            case 0:
+                cell.textLabel?.text = "昵称"
+                cell.detailTextLabel?.text = "nickname"
+            case 1:
+                cell.textLabel?.text = "改密码"
+                cell.detailTextLabel?.text = ""
+            case 2:
+                cell.textLabel?.text = ""
+                cell.detailTextLabel?.text = ""
+                cell.isUserInteractionEnabled = false;
+                cell.accessoryType = UITableViewCellAccessoryType.none
+            case 3:
+                cell.textLabel?.text = "用户反馈"
+                cell.detailTextLabel?.text = ""
+            case 4:
+                cell.textLabel?.text = ""
+                cell.detailTextLabel?.text = ""
+                cell.isUserInteractionEnabled = false;
+                cell.accessoryType = UITableViewCellAccessoryType.none
+            default:
+                break
+        }
         return cell
     }
-    */
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let index = indexPath.row
+        var viewController = self.storyboard!.instantiateViewController(withIdentifier: "PersonNicknameController")
+        if(index == 1) {
+            viewController = self.storyboard!.instantiateViewController(withIdentifier: "PersonPasswordController")
+        } else if(index == 2) {
+            viewController = self.storyboard!.instantiateViewController(withIdentifier: "PersonFeedbackController")
+        } else {
+            //TODO
+        }
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
 
     /*
     // Override to support conditional editing of the table view.

@@ -863,6 +863,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="个人设置" id="ZWA-wS-ol0"/>
+                    <connections>
+                        <outlet property="PersonTableView" destination="14l-FN-Hao" id="Qln-1z-nlz"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="diX-EG-9ok" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
