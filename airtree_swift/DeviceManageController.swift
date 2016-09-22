@@ -56,7 +56,24 @@ class DeviceManageController: UITableViewController {
         let engine = MKNetworkHost()
         engine.start(request)
     }
-    
+
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if identifier == "addNewDevice" {
+//            let reachability: Reachability = Reachability.reachabilityForInternetConnection()
+//            let networkStatus: Int = reachability.currentReachabilityStatus().value
+//            if(status != ReachableViaWiFi) {
+//                let alert: UIAlertView = UIAlertView(title: "错误信息", message: "请先连接WIFI网络.", delegate: self, cancelButtonTitle: "OK")
+//                alert.show()
+//                return false
+//            }
+            let alert: UIAlertView = UIAlertView(title: "错误信息", message: "请先连接WIFI网络.", delegate: self, cancelButtonTitle: "OK")
+            alert.show()
+            return false
+        }
+        return true
+    }
+
+
     // MARK: - Table view data source
 
 //    override func numberOfSections(in tableView: UITableView) -> Int {
@@ -67,7 +84,6 @@ class DeviceManageController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.devices.count
     }
-
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DeviceMngCell", for: indexPath)
