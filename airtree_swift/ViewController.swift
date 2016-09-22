@@ -29,10 +29,22 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 
     @IBAction func clickLoginButton(_ sender: UIButton) {
-        print(TxtUsername.text)
-        
+
+        let username = TxtUsername.text;
+        let password = TxtPassword.text;
+
+        print(username)
+        print(password)
+
+        let baseURL = "http://api.7drlb.com";
+        let params = ["username": username, "password": password]
+        let request = MKNetworkRequest(urlString: baseURL + "/user/login", params: params, bodyData: nil, httpMethod: "POST");
+        request? .addCompletionHandler { response in
+            print(response?.responseAsString)
+
+        }
         let engine = MKNetworkHost()
-        print(engine)
+        engine.start(request)
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {

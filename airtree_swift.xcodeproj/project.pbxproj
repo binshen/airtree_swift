@@ -9,6 +9,29 @@
 /* Begin PBXBuildFile section */
 		FD568A4C1D9387CC003CEB5F /* MKNetworkKit in Resources */ = {isa = PBXBuildFile; fileRef = FD568A4B1D9387CC003CEB5F /* MKNetworkKit */; };
 		FD568A511D938B48003CEB5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB50A5E1D92C19600627BED /* ViewController.swift */; };
+		FD568ACE1D939BE7003CEB5F /* MKCache.h in Sources */ = {isa = PBXBuildFile; fileRef = FD568AC51D939BE7003CEB5F /* MKCache.h */; };
+		FD568ACF1D939BE7003CEB5F /* MKCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FD568AC61D939BE7003CEB5F /* MKCache.m */; };
+		FD568AD01D939BE7003CEB5F /* MKNetworkHost.h in Sources */ = {isa = PBXBuildFile; fileRef = FD568AC71D939BE7003CEB5F /* MKNetworkHost.h */; };
+		FD568AD11D939BE7003CEB5F /* MKNetworkHost.m in Sources */ = {isa = PBXBuildFile; fileRef = FD568AC81D939BE7003CEB5F /* MKNetworkHost.m */; };
+		FD568AD21D939BE7003CEB5F /* MKNetworkKit.h in Sources */ = {isa = PBXBuildFile; fileRef = FD568AC91D939BE7003CEB5F /* MKNetworkKit.h */; };
+		FD568AD31D939BE7003CEB5F /* MKNetworkRequest.h in Sources */ = {isa = PBXBuildFile; fileRef = FD568ACA1D939BE7003CEB5F /* MKNetworkRequest.h */; };
+		FD568AD41D939BE7003CEB5F /* MKNetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FD568ACB1D939BE7003CEB5F /* MKNetworkRequest.m */; };
+		FD568AD51D939BE7003CEB5F /* MKObject.h in Sources */ = {isa = PBXBuildFile; fileRef = FD568ACC1D939BE7003CEB5F /* MKObject.h */; };
+		FD568AD61D939BE7003CEB5F /* MKObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FD568ACD1D939BE7003CEB5F /* MKObject.m */; };
+		FD568AE51D939C10003CEB5F /* NSDate+RFC1123.h in Sources */ = {isa = PBXBuildFile; fileRef = FD568AD71D939C10003CEB5F /* NSDate+RFC1123.h */; };
+		FD568AE61D939C10003CEB5F /* NSDate+RFC1123.m in Sources */ = {isa = PBXBuildFile; fileRef = FD568AD81D939C10003CEB5F /* NSDate+RFC1123.m */; };
+		FD568AE71D939C10003CEB5F /* NSDictionary+MKNKAdditions.h in Sources */ = {isa = PBXBuildFile; fileRef = FD568AD91D939C10003CEB5F /* NSDictionary+MKNKAdditions.h */; };
+		FD568AE81D939C10003CEB5F /* NSDictionary+MKNKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FD568ADA1D939C10003CEB5F /* NSDictionary+MKNKAdditions.m */; };
+		FD568AE91D939C10003CEB5F /* NSHTTPURLResponse+MKNKAdditions.h in Sources */ = {isa = PBXBuildFile; fileRef = FD568ADB1D939C10003CEB5F /* NSHTTPURLResponse+MKNKAdditions.h */; };
+		FD568AEA1D939C10003CEB5F /* NSHTTPURLResponse+MKNKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FD568ADC1D939C10003CEB5F /* NSHTTPURLResponse+MKNKAdditions.m */; };
+		FD568AEB1D939C10003CEB5F /* NSMutableDictionary+MKNKAdditions.h in Sources */ = {isa = PBXBuildFile; fileRef = FD568ADD1D939C10003CEB5F /* NSMutableDictionary+MKNKAdditions.h */; };
+		FD568AEC1D939C10003CEB5F /* NSMutableDictionary+MKNKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FD568ADE1D939C10003CEB5F /* NSMutableDictionary+MKNKAdditions.m */; };
+		FD568AED1D939C10003CEB5F /* NSString+MKNKAdditions.h in Sources */ = {isa = PBXBuildFile; fileRef = FD568ADF1D939C10003CEB5F /* NSString+MKNKAdditions.h */; };
+		FD568AEE1D939C10003CEB5F /* NSString+MKNKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FD568AE01D939C10003CEB5F /* NSString+MKNKAdditions.m */; };
+		FD568AEF1D939C10003CEB5F /* UIAlertView+MKNKAdditions.h in Sources */ = {isa = PBXBuildFile; fileRef = FD568AE11D939C10003CEB5F /* UIAlertView+MKNKAdditions.h */; };
+		FD568AF01D939C10003CEB5F /* UIAlertView+MKNKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FD568AE21D939C10003CEB5F /* UIAlertView+MKNKAdditions.m */; };
+		FD568AF11D939C10003CEB5F /* UIImageView+MKNKAdditions.h in Sources */ = {isa = PBXBuildFile; fileRef = FD568AE31D939C10003CEB5F /* UIImageView+MKNKAdditions.h */; };
+		FD568AF21D939C10003CEB5F /* UIImageView+MKNKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FD568AE41D939C10003CEB5F /* UIImageView+MKNKAdditions.m */; };
 		FDB50A5D1D92C19600627BED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB50A5C1D92C19600627BED /* AppDelegate.swift */; };
 		FDB50A621D92C19600627BED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB50A601D92C19600627BED /* Main.storyboard */; };
 		FDB50A641D92C19600627BED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB50A631D92C19600627BED /* Assets.xcassets */; };
@@ -104,7 +127,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FD568A4B1D9387CC003CEB5F /* MKNetworkKit */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MKNetworkKit; sourceTree = "<group>"; };
+		FD568A4B1D9387CC003CEB5F /* MKNetworkKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MKNetworkKit; path = /Users/bin.shen/ios_dev/airtree_swift/MKNetworkKit; sourceTree = "<absolute>"; };
+		FD568AC51D939BE7003CEB5F /* MKCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MKCache.h; path = MKNetworkKit/MKCache.h; sourceTree = "<group>"; };
+		FD568AC61D939BE7003CEB5F /* MKCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MKCache.m; path = MKNetworkKit/MKCache.m; sourceTree = "<group>"; };
+		FD568AC71D939BE7003CEB5F /* MKNetworkHost.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MKNetworkHost.h; path = MKNetworkKit/MKNetworkHost.h; sourceTree = "<group>"; };
+		FD568AC81D939BE7003CEB5F /* MKNetworkHost.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MKNetworkHost.m; path = MKNetworkKit/MKNetworkHost.m; sourceTree = "<group>"; };
+		FD568AC91D939BE7003CEB5F /* MKNetworkKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MKNetworkKit.h; path = MKNetworkKit/MKNetworkKit.h; sourceTree = "<group>"; };
+		FD568ACA1D939BE7003CEB5F /* MKNetworkRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MKNetworkRequest.h; path = MKNetworkKit/MKNetworkRequest.h; sourceTree = "<group>"; };
+		FD568ACB1D939BE7003CEB5F /* MKNetworkRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MKNetworkRequest.m; path = MKNetworkKit/MKNetworkRequest.m; sourceTree = "<group>"; };
+		FD568ACC1D939BE7003CEB5F /* MKObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MKObject.h; path = MKNetworkKit/MKObject.h; sourceTree = "<group>"; };
+		FD568ACD1D939BE7003CEB5F /* MKObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MKObject.m; path = MKNetworkKit/MKObject.m; sourceTree = "<group>"; };
+		FD568AD71D939C10003CEB5F /* NSDate+RFC1123.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSDate+RFC1123.h"; path = "MKNetworkKit/Extensions/NSDate+RFC1123.h"; sourceTree = "<group>"; };
+		FD568AD81D939C10003CEB5F /* NSDate+RFC1123.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSDate+RFC1123.m"; path = "MKNetworkKit/Extensions/NSDate+RFC1123.m"; sourceTree = "<group>"; };
+		FD568AD91D939C10003CEB5F /* NSDictionary+MKNKAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+MKNKAdditions.h"; path = "MKNetworkKit/Extensions/NSDictionary+MKNKAdditions.h"; sourceTree = "<group>"; };
+		FD568ADA1D939C10003CEB5F /* NSDictionary+MKNKAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+MKNKAdditions.m"; path = "MKNetworkKit/Extensions/NSDictionary+MKNKAdditions.m"; sourceTree = "<group>"; };
+		FD568ADB1D939C10003CEB5F /* NSHTTPURLResponse+MKNKAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSHTTPURLResponse+MKNKAdditions.h"; path = "MKNetworkKit/Extensions/NSHTTPURLResponse+MKNKAdditions.h"; sourceTree = "<group>"; };
+		FD568ADC1D939C10003CEB5F /* NSHTTPURLResponse+MKNKAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSHTTPURLResponse+MKNKAdditions.m"; path = "MKNetworkKit/Extensions/NSHTTPURLResponse+MKNKAdditions.m"; sourceTree = "<group>"; };
+		FD568ADD1D939C10003CEB5F /* NSMutableDictionary+MKNKAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSMutableDictionary+MKNKAdditions.h"; path = "MKNetworkKit/Extensions/NSMutableDictionary+MKNKAdditions.h"; sourceTree = "<group>"; };
+		FD568ADE1D939C10003CEB5F /* NSMutableDictionary+MKNKAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSMutableDictionary+MKNKAdditions.m"; path = "MKNetworkKit/Extensions/NSMutableDictionary+MKNKAdditions.m"; sourceTree = "<group>"; };
+		FD568ADF1D939C10003CEB5F /* NSString+MKNKAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSString+MKNKAdditions.h"; path = "MKNetworkKit/Extensions/NSString+MKNKAdditions.h"; sourceTree = "<group>"; };
+		FD568AE01D939C10003CEB5F /* NSString+MKNKAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSString+MKNKAdditions.m"; path = "MKNetworkKit/Extensions/NSString+MKNKAdditions.m"; sourceTree = "<group>"; };
+		FD568AE11D939C10003CEB5F /* UIAlertView+MKNKAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+MKNKAdditions.h"; path = "MKNetworkKit/Extensions/UIAlertView+MKNKAdditions.h"; sourceTree = "<group>"; };
+		FD568AE21D939C10003CEB5F /* UIAlertView+MKNKAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+MKNKAdditions.m"; path = "MKNetworkKit/Extensions/UIAlertView+MKNKAdditions.m"; sourceTree = "<group>"; };
+		FD568AE31D939C10003CEB5F /* UIImageView+MKNKAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIImageView+MKNKAdditions.h"; path = "MKNetworkKit/Extensions/UIImageView+MKNKAdditions.h"; sourceTree = "<group>"; };
+		FD568AE41D939C10003CEB5F /* UIImageView+MKNKAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+MKNKAdditions.m"; path = "MKNetworkKit/Extensions/UIImageView+MKNKAdditions.m"; sourceTree = "<group>"; };
 		FDB50A591D92C19600627BED /* airtree_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = airtree_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB50A5C1D92C19600627BED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDB50A5E1D92C19600627BED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -186,7 +232,6 @@
 		FDBEC3941D92CD9200D3DC69 /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		FDBEC3961D92CDD800D3DC69 /* ForgetPwdController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetPwdController.swift; sourceTree = "<group>"; };
 		FDF37E5F1D93664B00C00702 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
-		FDF37E6F1D9383BF00C00702 /* airtree_swift_Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "airtree_swift_Bridging-Header.h"; sourceTree = "<group>"; };
 		FDF37E721D93845000C00702 /* MKNetworkKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MKNetworkKit; path = /Users/bin.shen/ios_dev/airtree_swift/MKNetworkKit; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
@@ -215,10 +260,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD568A951D939ACC003CEB5F /* MKNetworkKit */ = {
+			isa = PBXGroup;
+			children = (
+				FD568AA81D939B14003CEB5F /* Extensions */,
+				FD568AC51D939BE7003CEB5F /* MKCache.h */,
+				FD568AC61D939BE7003CEB5F /* MKCache.m */,
+				FD568AC71D939BE7003CEB5F /* MKNetworkHost.h */,
+				FD568AC81D939BE7003CEB5F /* MKNetworkHost.m */,
+				FD568AC91D939BE7003CEB5F /* MKNetworkKit.h */,
+				FD568ACA1D939BE7003CEB5F /* MKNetworkRequest.h */,
+				FD568ACB1D939BE7003CEB5F /* MKNetworkRequest.m */,
+				FD568ACC1D939BE7003CEB5F /* MKObject.h */,
+				FD568ACD1D939BE7003CEB5F /* MKObject.m */,
+			);
+			name = MKNetworkKit;
+			sourceTree = "<group>";
+		};
+		FD568AA81D939B14003CEB5F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FD568AD71D939C10003CEB5F /* NSDate+RFC1123.h */,
+				FD568AD81D939C10003CEB5F /* NSDate+RFC1123.m */,
+				FD568AD91D939C10003CEB5F /* NSDictionary+MKNKAdditions.h */,
+				FD568ADA1D939C10003CEB5F /* NSDictionary+MKNKAdditions.m */,
+				FD568ADB1D939C10003CEB5F /* NSHTTPURLResponse+MKNKAdditions.h */,
+				FD568ADC1D939C10003CEB5F /* NSHTTPURLResponse+MKNKAdditions.m */,
+				FD568ADD1D939C10003CEB5F /* NSMutableDictionary+MKNKAdditions.h */,
+				FD568ADE1D939C10003CEB5F /* NSMutableDictionary+MKNKAdditions.m */,
+				FD568ADF1D939C10003CEB5F /* NSString+MKNKAdditions.h */,
+				FD568AE01D939C10003CEB5F /* NSString+MKNKAdditions.m */,
+				FD568AE11D939C10003CEB5F /* UIAlertView+MKNKAdditions.h */,
+				FD568AE21D939C10003CEB5F /* UIAlertView+MKNKAdditions.m */,
+				FD568AE31D939C10003CEB5F /* UIImageView+MKNKAdditions.h */,
+				FD568AE41D939C10003CEB5F /* UIImageView+MKNKAdditions.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		FDB50A501D92C19600627BED = {
 			isa = PBXGroup;
 			children = (
-				FDF37E6F1D9383BF00C00702 /* airtree_swift_Bridging-Header.h */,
 				FDB50A5B1D92C19600627BED /* airtree_swift */,
 				FDB50A701D92C19600627BED /* airtree_swiftTests */,
 				FDB50A7B1D92C19600627BED /* airtree_swiftUITests */,
@@ -347,7 +429,7 @@
 		FDF37E621D93708400C00702 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FD568A4B1D9387CC003CEB5F /* MKNetworkKit */,
+				FD568A951D939ACC003CEB5F /* MKNetworkKit */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -556,6 +638,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD568AE51D939C10003CEB5F /* NSDate+RFC1123.h in Sources */,
+				FD568AE61D939C10003CEB5F /* NSDate+RFC1123.m in Sources */,
+				FD568AE71D939C10003CEB5F /* NSDictionary+MKNKAdditions.h in Sources */,
+				FD568AE81D939C10003CEB5F /* NSDictionary+MKNKAdditions.m in Sources */,
+				FD568AE91D939C10003CEB5F /* NSHTTPURLResponse+MKNKAdditions.h in Sources */,
+				FD568AEA1D939C10003CEB5F /* NSHTTPURLResponse+MKNKAdditions.m in Sources */,
+				FD568AEB1D939C10003CEB5F /* NSMutableDictionary+MKNKAdditions.h in Sources */,
+				FD568AEC1D939C10003CEB5F /* NSMutableDictionary+MKNKAdditions.m in Sources */,
+				FD568AED1D939C10003CEB5F /* NSString+MKNKAdditions.h in Sources */,
+				FD568AEE1D939C10003CEB5F /* NSString+MKNKAdditions.m in Sources */,
+				FD568AEF1D939C10003CEB5F /* UIAlertView+MKNKAdditions.h in Sources */,
+				FD568AF01D939C10003CEB5F /* UIAlertView+MKNKAdditions.m in Sources */,
+				FD568AF11D939C10003CEB5F /* UIImageView+MKNKAdditions.h in Sources */,
+				FD568AF21D939C10003CEB5F /* UIImageView+MKNKAdditions.m in Sources */,
+				FD568ACE1D939BE7003CEB5F /* MKCache.h in Sources */,
+				FD568ACF1D939BE7003CEB5F /* MKCache.m in Sources */,
+				FD568AD01D939BE7003CEB5F /* MKNetworkHost.h in Sources */,
+				FD568AD11D939BE7003CEB5F /* MKNetworkHost.m in Sources */,
+				FD568AD21D939BE7003CEB5F /* MKNetworkKit.h in Sources */,
+				FD568AD31D939BE7003CEB5F /* MKNetworkRequest.h in Sources */,
+				FD568AD41D939BE7003CEB5F /* MKNetworkRequest.m in Sources */,
+				FD568AD51D939BE7003CEB5F /* MKObject.h in Sources */,
+				FD568AD61D939BE7003CEB5F /* MKObject.m in Sources */,
 				FDB50A5D1D92C19600627BED /* AppDelegate.swift in Sources */,
 				FD568A511D938B48003CEB5F /* ViewController.swift in Sources */,
 				FDBEC3971D92CDD800D3DC69 /* ForgetPwdController.swift in Sources */,
