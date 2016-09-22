@@ -11,6 +11,7 @@ import UIKit
 class DeviceManageController: UITableViewController {
 
     var devices = [AnyObject]()
+    var timer: Timer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,12 +23,19 @@ class DeviceManageController: UITableViewController {
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated);
+        super.viewWillAppear(true);
         
         self.autoRefreshData()
+        self.timer = Timer.scheduledTimer(timeInterval: 6, target: self, selector: Selector("autoRefreshData"), userInfo: nil, repeats: true)
     }
 
-    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(true)
+
+        self.timer.invalidate()
+    }
+
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -44,11 +52,9 @@ class DeviceManageController: UITableViewController {
                 self.devices = parsedData
             }
             self.tableView.reloadData()
-            print(self.devices)
         }
         let engine = MKNetworkHost()
         engine.start(request)
-
     }
     
     // MARK: - Table view data source
