@@ -96,7 +96,8 @@ class HistoryController: UIViewController {
         self.navigationItem.title = device?.value(forKey: "name") as? String == nil ? device?.value(forKey: "mac") as? String : device?.value(forKey: "name") as! String
 
         let mac = device?.value(forKey: "mac") as! String
-        let request = MKNetworkRequest(urlString: MORAL_API_BASE_PATH + "/device/mac/\(mac)/get_history?day=\(dateString)", params: nil, bodyData: nil, httpMethod: "GET");
+        let url = MORAL_API_BASE_PATH + "/device/mac/\(mac)/get_history?day=\(dateString)"
+        let request = MKNetworkRequest(urlString: url, params: nil, bodyData: nil, httpMethod: "GET");
         request?.addCompletionHandler { response in
             let jsonStr = response?.responseAsString
             let data = jsonStr!.data(using: .utf8)!
@@ -104,6 +105,10 @@ class HistoryController: UIViewController {
                 if parsedData.isEmpty {
                     
                 } else {
+                    if parsedData["x3"] as? Float == nil {
+                        return
+                    }
+
                     let x1 = parsedData["x1"] as! Float
                     let x3 = parsedData["x3"] as! Float
                     let x9 = parsedData["x9"] as! Float

@@ -47,7 +47,8 @@ class ViewController: UIViewController, UITextFieldDelegate, UIAlertViewDelegate
         let username = TxtUsername.text!;
         let password = TxtPassword.text!;
         let params = ["username": username, "password": password]
-        let request = MKNetworkRequest(urlString: MORAL_API_BASE_PATH + "/user/login", params: params, bodyData: nil, httpMethod: "POST");
+        let url = MORAL_API_BASE_PATH + "/user/login"
+        let request = MKNetworkRequest(urlString: url, params: params, bodyData: nil, httpMethod: "POST");
         request? .addCompletionHandler { response in
             let jsonStr = response?.responseAsString
             let data = jsonStr!.data(using: .utf8)!

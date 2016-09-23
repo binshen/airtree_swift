@@ -38,7 +38,8 @@ class DeviceDetailReviseController: UIViewController {
             let deviceID = device!.value(forKey: "_id") as! String
             let deviceName = self.TextDeviceName.text!
             let params = ["name": deviceName]
-            let request = MKNetworkRequest(urlString: MORAL_API_BASE_PATH + "/user/\(userID)/device/\(deviceID)/update_name", params: params, bodyData: nil, httpMethod: "POST");
+            let url = MORAL_API_BASE_PATH + "/user/\(userID)/device/\(deviceID)/update_name"
+            let request = MKNetworkRequest(urlString: url, params: params, bodyData: nil, httpMethod: "POST");
             request? .addCompletionHandler { response in
                 let jsonStr = response?.responseAsString
                 let data = jsonStr!.data(using: .utf8)!

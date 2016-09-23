@@ -43,7 +43,8 @@ class DeviceManageController: UITableViewController {
 
     func autoRefreshData() {
         let userID = _loginUser["_id"] as! String //"5766a035f08504e7cd3fb33e"
-        let request = MKNetworkRequest(urlString: MORAL_API_BASE_PATH + "/user/\(userID)/get_device_info", params: nil, bodyData: nil, httpMethod: "GET");
+        let url = MORAL_API_BASE_PATH + "/user/\(userID)/get_device_info"
+        let request = MKNetworkRequest(urlString: url, params: nil, bodyData: nil, httpMethod: "GET");
         request? .addCompletionHandler { response in
             let jsonStr = response?.responseAsString
             let data = jsonStr!.data(using: .utf8)!

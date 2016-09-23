@@ -59,7 +59,8 @@ class DeviceInfoController: UITableViewController, UIAlertViewDelegate {
     func autoRefreshData() {
         let device = _selectedDevice as? NSDictionary
         let mac = device?.value(forKey: "mac") as! String
-        let request = MKNetworkRequest(urlString: MORAL_API_BASE_PATH + "/device/mac/\(mac)/get_test", params: nil, bodyData: nil, httpMethod: "GET");
+        let url = MORAL_API_BASE_PATH + "/device/mac/\(mac)/get_test"
+        let request = MKNetworkRequest(urlString: url, params: nil, bodyData: nil, httpMethod: "GET");
         request? .addCompletionHandler { response in
             let jsonStr = response?.responseAsString
             let data = jsonStr!.data(using: .utf8)!
