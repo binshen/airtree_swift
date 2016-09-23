@@ -731,6 +731,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="用户注册" id="Zr8-1w-K3R"/>
+                    <connections>
+                        <outlet property="BtnValidate" destination="XoH-6T-Lt0" id="ml3-Ru-b2f"/>
+                        <outlet property="TextCode" destination="844-Fg-h9L" id="PUY-C1-0wg"/>
+                        <outlet property="TextPwd" destination="PzH-So-1IQ" id="Wb6-gM-yUg"/>
+                        <outlet property="TextTel" destination="Wb9-Ky-Oma" id="IeV-pH-NYa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1bs-iK-QgN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -797,6 +803,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="忘记密码" id="SdJ-cg-Cf1"/>
                     <connections>
+                        <outlet property="BtnValidate" destination="9Dq-li-117" id="cOI-Qa-LSP"/>
                         <outlet property="TextCode" destination="97D-vA-PJQ" id="E3V-cm-m8L"/>
                         <outlet property="TextPwd" destination="mST-ay-QFY" id="tNW-n8-7AG"/>
                         <outlet property="TextTel" destination="eXd-0V-jAI" id="Sai-kv-GiZ"/>
