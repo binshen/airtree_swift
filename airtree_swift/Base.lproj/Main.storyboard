@@ -884,18 +884,18 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DN5-J3-rgC" id="s4g-9b-Myu">
-                                    <frame key="frameInset" width="342" height="44"/>
+                                    <frame key="frameInset" width="342" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Pn2-TQ-IHX">
-                                            <frame key="frameInset" minX="55" minY="12" width="31.5" height="19.5"/>
+                                            <frame key="frameInset" minX="55" minY="12" width="32" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ALl-sp-Usy">
-                                            <frame key="frameInset" minX="284" minY="12" width="56" height="19.5"/>
+                                            <frame key="frameInset" minX="284" minY="12" width="56" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1232,7 +1232,7 @@
         <!--历史数据-->
         <scene sceneID="jHm-a0-kzY">
             <objects>
-                <viewController storyboardIdentifier="HistoryController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Pt2-rA-Np2" customClass="HistoryController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HistoryController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Pt2-rA-Np2" customClass="HistoryController" customModule="airtree_swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FT3-Z0-pcr"/>
                         <viewControllerLayoutGuide type="bottom" id="qg0-LQ-wLT"/>
@@ -1245,7 +1245,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="2016-05-30"/>
                                 <connections>
-                                    <action selector="clickDateButton:" destination="Pt2-rA-Np2" eventType="touchUpInside" id="YNp-gs-cGq"/>
+                                    <action selector="clickDateButton:" destination="Pt2-rA-Np2" eventType="touchUpInside" id="Iq6-i7-mcB"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="naN-vq-4a7">
@@ -1359,18 +1359,18 @@
                     </view>
                     <navigationItem key="navigationItem" title="历史数据" id="o6X-XY-wlk"/>
                     <connections>
-                        <outlet property="DateSelect" destination="6gj-5P-bYE" id="6y1-It-fvg"/>
-                        <outlet property="DividerLine" destination="RtQ-q2-tkC" id="ceN-bG-FBO"/>
-                        <outlet property="LabelDescription" destination="kiS-rp-7RW" id="XUc-c1-wiH"/>
-                        <outlet property="formaldehydeLabel" destination="Ohs-dl-a55" id="8iO-4B-ydz"/>
-                        <outlet property="formaldehydeValue" destination="N3U-BS-iYV" id="JYq-PZ-95P"/>
-                        <outlet property="humidityLabel" destination="PJe-ny-amp" id="P15-6j-LGm"/>
-                        <outlet property="humidityValue" destination="EUE-P6-ctE" id="ud8-IQ-Io0"/>
-                        <outlet property="mainValue" destination="naN-vq-4a7" id="97m-Ej-4Fp"/>
-                        <outlet property="pm25Label" destination="Ld1-oA-R4A" id="thF-oz-91T"/>
-                        <outlet property="pm25Value" destination="aAC-gJ-lVm" id="l3m-9l-oza"/>
-                        <outlet property="temperatureLabel" destination="e0m-vb-Ygm" id="Idc-tp-8ge"/>
-                        <outlet property="temperatureValue" destination="9ZU-3S-eEU" id="gJn-NJ-iFP"/>
+                        <outlet property="DateSelect" destination="6gj-5P-bYE" id="akY-DT-irH"/>
+                        <outlet property="DividerLine" destination="RtQ-q2-tkC" id="CsB-FG-Ix6"/>
+                        <outlet property="LabelDescription" destination="kiS-rp-7RW" id="w2T-DW-RTv"/>
+                        <outlet property="formaldehydeLabel" destination="Ohs-dl-a55" id="Xsc-BL-BSc"/>
+                        <outlet property="formaldehydeValue" destination="N3U-BS-iYV" id="Y35-2s-7hj"/>
+                        <outlet property="humidityLabel" destination="PJe-ny-amp" id="Vne-xp-DnX"/>
+                        <outlet property="humidityValue" destination="EUE-P6-ctE" id="snz-nh-zbv"/>
+                        <outlet property="mainValue" destination="naN-vq-4a7" id="hOI-cc-YJd"/>
+                        <outlet property="pm25Label" destination="Ld1-oA-R4A" id="gPD-dV-cSE"/>
+                        <outlet property="pm25Value" destination="aAC-gJ-lVm" id="ltd-Qf-8Wf"/>
+                        <outlet property="temperatureLabel" destination="e0m-vb-Ygm" id="XQz-GM-8Oe"/>
+                        <outlet property="temperatureValue" destination="9ZU-3S-eEU" id="UhY-4n-9Sg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zPj-Zc-kx4" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -125,6 +125,7 @@
 		FDF23AA51D94DEEC0046AD5E /* HFSmartLink.h in Sources */ = {isa = PBXBuildFile; fileRef = FD61E5381D942D6700C9AA91 /* HFSmartLink.h */; };
 		FDF23AA61D94DEF00046AD5E /* HFSmartLinkDeviceInfo.h in Sources */ = {isa = PBXBuildFile; fileRef = FD61E5391D942D6700C9AA91 /* HFSmartLinkDeviceInfo.h */; };
 		FDF23AA71D94DEF30046AD5E /* smartlinklib_7x.h in Sources */ = {isa = PBXBuildFile; fileRef = FD61E53A1D942D6700C9AA91 /* smartlinklib_7x.h */; };
+		FDF23AAA1D94ED4D0046AD5E /* DateTimePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF23AA91D94ED4D0046AD5E /* DateTimePicker.m */; };
 		FDF37E601D93664B00C00702 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF37E5F1D93664B00C00702 /* MainController.swift */; };
 		FDF37E731D93845000C00702 /* MKNetworkKit in Resources */ = {isa = PBXBuildFile; fileRef = FDF37E721D93845000C00702 /* MKNetworkKit */; };
 /* End PBXBuildFile section */
@@ -274,6 +275,8 @@
 		FDBEC3941D92CD9200D3DC69 /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		FDBEC3961D92CDD800D3DC69 /* ForgetPwdController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetPwdController.swift; sourceTree = "<group>"; };
 		FDF23AA31D94DEB80046AD5E /* libsmartlinklib_7x.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsmartlinklib_7x.a; sourceTree = "<group>"; };
+		FDF23AA81D94ED4D0046AD5E /* DateTimePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTimePicker.h; sourceTree = "<group>"; };
+		FDF23AA91D94ED4D0046AD5E /* DateTimePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTimePicker.m; sourceTree = "<group>"; };
 		FDF37E5F1D93664B00C00702 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		FDF37E721D93845000C00702 /* MKNetworkKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MKNetworkKit; path = /Users/bin.shen/ios_dev/airtree_swift/MKNetworkKit; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
@@ -358,6 +361,8 @@
 				FD61E53A1D942D6700C9AA91 /* smartlinklib_7x.h */,
 				FD61E53B1D942D6700C9AA91 /* UIImage+animatedGIF.h */,
 				FD61E53C1D942D6700C9AA91 /* UIImage+animatedGIF.m */,
+				FDF23AA81D94ED4D0046AD5E /* DateTimePicker.h */,
+				FDF23AA91D94ED4D0046AD5E /* DateTimePicker.m */,
 			);
 			sourceTree = "<group>";
 		};
@@ -743,6 +748,7 @@
 				FDB50A5D1D92C19600627BED /* AppDelegate.swift in Sources */,
 				FD568A511D938B48003CEB5F /* ViewController.swift in Sources */,
 				FDBEC3971D92CDD800D3DC69 /* ForgetPwdController.swift in Sources */,
+				FDF23AAA1D94ED4D0046AD5E /* DateTimePicker.m in Sources */,
 				FD61E5341D942B7700C9AA91 /* MonitorContentController.swift in Sources */,
 				FD568AF91D93CD8A003CEB5F /* PersonPasswordController.swift in Sources */,
 				FDBEC3951D92CD9200D3DC69 /* RegisterController.swift in Sources */,
