@@ -64,12 +64,12 @@ class DeviceInfoController: UITableViewController, UIAlertViewDelegate {
             let jsonStr = response?.responseAsString
             let data = jsonStr!.data(using: .utf8)!
             if let parsedData = try? JSONSerialization.jsonObject(with: data) as! [String:Any] {
-                let test = parsedData["test"] as! Int
-                let created = parsedData["created"] as! Double
-                if test >= 0 {
+                let test = parsedData["test"] as? Int
+                if test != nil {
                     var dateFormatter = DateFormatter()
                     dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-                    let dateString = dateFormatter.string(from: Date(timeIntervalSince1970: created))
+                    let created = parsedData["created"] as! Double
+                    let dateString = dateFormatter.string(from: Date(timeIntervalSince1970: created / 1000))
                     self.checkStatus = test == 1 ? "需要更换(\(dateString))" : "无需更换(\(dateString))"
                 } else {
                     self.checkStatus = ""
@@ -122,12 +122,12 @@ class DeviceInfoController: UITableViewController, UIAlertViewDelegate {
                 }
             case 1:
                 cell.textLabel?.text = "设备名称"
-                cell.detailTextLabel?.text = device?.value(forKey: "name") as? String
+                cell.detailTextLabel?.text = device?.value(forKey: "name") as? String == nil ? device?.value(forKey: "mac") as? String : device?.value(forKey: "name") as! String
                 cell.isUserInteractionEnabled = true
                 cell.accessoryType = UITableViewCellAccessoryType.disclosureIndicator
             case 2:
                 cell.textLabel?.text = "类型"
-                cell.detailTextLabel?.text = device?.value(forKey: "type") as? String
+                cell.detailTextLabel?.text = device?.value(forKey: "status") as? Int == 1 ? "主机" : "从机"
             case 3:
                 cell.textLabel?.text = "MAC"
                 cell.detailTextLabel?.text = device?.value(forKey: "mac") as? String
