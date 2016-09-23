@@ -1100,7 +1100,7 @@
         <!--设备名称-->
         <scene sceneID="Cvh-ir-ujE">
             <objects>
-                <viewController storyboardIdentifier="DeviceDetailReviseController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="r6E-ev-Hsu" customClass="DeviceDetailReviseController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DeviceDetailReviseController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="r6E-ev-Hsu" customClass="DeviceDetailReviseController" customModule="airtree_swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vAh-QH-Uw5"/>
                         <viewControllerLayoutGuide type="bottom" id="XTv-n1-SrR"/>
@@ -1118,7 +1118,7 @@
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="确    定"/>
                                 <connections>
-                                    <action selector="clickUpdate:" destination="r6E-ev-Hsu" eventType="touchUpInside" id="xDc-tB-cLr"/>
+                                    <action selector="clickUpdate:" destination="r6E-ev-Hsu" eventType="touchUpInside" id="rha-Gk-xJe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1134,7 +1134,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="设备名称" id="XF5-h0-Fzz"/>
                     <connections>
-                        <outlet property="TextDeviceName" destination="ZeE-b2-bQr" id="cp7-ZR-s5Z"/>
+                        <outlet property="TextDeviceName" destination="ZeE-b2-bQr" id="xot-Vs-wZt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mPx-GC-x6a" userLabel="First Responder" sceneMemberID="firstResponder"/>
