@@ -16,5 +16,6 @@
 #import "HFSmartLink.h"
 #import "HFSmartLinkDeviceInfo.h"
 #import "DateTimePicker.h"
+#import "BackgroundRunner.h"
 
 #endif /* airtree_swift_Bridging_Header_h */

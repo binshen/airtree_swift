@@ -48,6 +48,7 @@
 		FD61E5341D942B7700C9AA91 /* MonitorContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD61E5331D942B7700C9AA91 /* MonitorContentController.swift */; };
 		FD61E5371D942BCB00C9AA91 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = FD61E5361D942BCB00C9AA91 /* Reachability.m */; };
 		FD61E53D1D942D6700C9AA91 /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = FD61E53C1D942D6700C9AA91 /* UIImage+animatedGIF.m */; };
+		FD6B6A791D95894F005F51AF /* BackgroundRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6B6A781D95894F005F51AF /* BackgroundRunner.m */; };
 		FDB50A5D1D92C19600627BED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB50A5C1D92C19600627BED /* AppDelegate.swift */; };
 		FDB50A621D92C19600627BED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB50A601D92C19600627BED /* Main.storyboard */; };
 		FDB50A641D92C19600627BED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB50A631D92C19600627BED /* Assets.xcassets */; };
@@ -194,6 +195,8 @@
 		FD61E53A1D942D6700C9AA91 /* smartlinklib_7x.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smartlinklib_7x.h; sourceTree = "<group>"; };
 		FD61E53B1D942D6700C9AA91 /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
 		FD61E53C1D942D6700C9AA91 /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
+		FD6B6A771D95894F005F51AF /* BackgroundRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundRunner.h; sourceTree = "<group>"; };
+		FD6B6A781D95894F005F51AF /* BackgroundRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundRunner.m; sourceTree = "<group>"; };
 		FDB50A591D92C19600627BED /* airtree_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = airtree_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB50A5C1D92C19600627BED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDB50A5E1D92C19600627BED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -348,6 +351,8 @@
 		FDB50A501D92C19600627BED = {
 			isa = PBXGroup;
 			children = (
+				FD6B6A771D95894F005F51AF /* BackgroundRunner.h */,
+				FD6B6A781D95894F005F51AF /* BackgroundRunner.m */,
 				FDB50A5B1D92C19600627BED /* airtree_swift */,
 				FDB50A701D92C19600627BED /* airtree_swiftTests */,
 				FDB50A7B1D92C19600627BED /* airtree_swiftUITests */,
@@ -743,6 +748,7 @@
 				FD568AD41D939BE7003CEB5F /* MKNetworkRequest.m in Sources */,
 				FD568AD51D939BE7003CEB5F /* MKObject.h in Sources */,
 				FD568AD61D939BE7003CEB5F /* MKObject.m in Sources */,
+				FD6B6A791D95894F005F51AF /* BackgroundRunner.m in Sources */,
 				FD568AF71D93CD6B003CEB5F /* PersonNicknameController.swift in Sources */,
 				FD568AFB1D93CD9A003CEB5F /* PersonFeedbackController.swift in Sources */,
 				FDB50A5D1D92C19600627BED /* AppDelegate.swift in Sources */,

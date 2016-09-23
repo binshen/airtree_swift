@@ -14,11 +14,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    var _backgroundRunningTimeInterval: TimeInterval!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 
         Thread.sleep(forTimeInterval: 2.0)
+
+        self._backgroundRunningTimeInterval = 0
+        self.performSelector(inBackground: #selector(runningInBackground), with: nil)
 
         return true
     }
@@ -31,10 +35,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+
+        if UIDevice.current.isMultitaskingSupported {
+            BackgroundRunner.shared().run()
+        }
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+
+        BackgroundRunner.shared().stop()
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
@@ -45,6 +55,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func runningInBackground() {
+        while(true) {
+            Thread.sleep(forTimeInterval: 10)
+            _backgroundRunningTimeInterval = _backgroundRunningTimeInterval + 1
+            print("Heartbeat: \(_backgroundRunningTimeInterval!)")
+            self.runHeartbeatService()
+        }
+    }
 
+    func runHeartbeatService() {
+        if _loginUser?["_id"] == nil {
+            return
+        }
+        let userID = _loginUser?["_id"] as! String;
+        let url = MORAL_API_BASE_PATH + "/user/\(userID)/online"
+        let request = MKNetworkRequest(urlString: url, params: nil, bodyData: nil, httpMethod: "POST");
+        request? .addCompletionHandler { response in
+            let jsonStr = response?.responseAsString
+            print(jsonStr!)
+        }
+        let engine = MKNetworkHost()
+        engine.start(request)
+    }
 }
 
