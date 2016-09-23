@@ -10,6 +10,6 @@ let MORAL_API_BASE_PATH: String = "http://api.7drlb.com"
 var _loginUser: [String:Any]!
 var _selectedDevice: AnyObject!
 
-class Constants {
+class Global {
 
 }

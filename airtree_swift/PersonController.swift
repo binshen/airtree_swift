@@ -23,9 +23,11 @@ class PersonController: UITableViewController {
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated);
+        super.viewWillAppear(true);
 
-
+        let indexPath = IndexPath(row: 0, section: 0)
+        let cell = self.tableView.cellForRow(at: indexPath)
+        cell?.detailTextLabel?.text = _loginUser["nickname"] as! String
     }
 
     override func didReceiveMemoryWarning() {

@@ -53,7 +53,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIAlertViewDelegate
             let jsonStr = response?.responseAsString
             let data = jsonStr!.data(using: .utf8)!
             if let parsedData = try? JSONSerialization.jsonObject(with: data) as! [String:Any] {
-                let user = parsedData["user"] as? [String:Any]
+                let user = parsedData["user"] as? [String:String]
                 if(user == nil) {
                     let alert: UIAlertView = UIAlertView(title: "登录失败", message: "输入的用户名或密码错误.", delegate: self, cancelButtonTitle: "OK")
                     alert.show()
