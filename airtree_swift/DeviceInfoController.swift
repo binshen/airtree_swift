@@ -40,7 +40,7 @@ class DeviceInfoController: UITableViewController, UIAlertViewDelegate {
         let device = _selectedDevice as? NSDictionary
         let indexPath = IndexPath(row: 1, section: 0)
         let cell = self.tableView.cellForRow(at: indexPath)
-        cell?.detailTextLabel?.text = device?.value(forKey: "name") as? String
+        cell?.detailTextLabel?.text = device?.value(forKey: "name") as? String == nil ? device?.value(forKey: "mac") as? String : device?.value(forKey: "name") as! String
 
         self.timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(autoRefreshData), userInfo: nil, repeats: true)
     }
