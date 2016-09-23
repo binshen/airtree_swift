@@ -24,9 +24,11 @@ class DeviceInfoController: UITableViewController, UIAlertViewDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true);
 
+        var device = _selectedDevice as? NSDictionary
+
         let indexPath = IndexPath(row: 1, section: 0)
         let cell = self.tableView.cellForRow(at: indexPath)
-        cell?.detailTextLabel?.text = "12312321"
+        cell?.detailTextLabel?.text = device?.value(forKey: "name") as? String
 
         self.timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(autoRefreshData), userInfo: nil, repeats: true)
     }
@@ -59,20 +61,27 @@ class DeviceInfoController: UITableViewController, UIAlertViewDelegate {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+        var device = _selectedDevice as? NSDictionary
         let cell = tableView.dequeueReusableCell(withIdentifier: "DeviceInfoCell", for: indexPath)
         switch indexPath.row {
             case 0:
                 cell.textLabel?.text = "设备编码"
+                cell.detailTextLabel?.text = device?.value(forKey: "_id") as? String
             case 1:
                 cell.textLabel?.text = "设备名称"
             case 2:
                 cell.textLabel?.text = "类型"
+                cell.detailTextLabel?.text = device?.value(forKey: "type") as? String
             case 3:
                 cell.textLabel?.text = "MAC"
+                cell.detailTextLabel?.text = device?.value(forKey: "mac") as? String
             case 4:
                 cell.textLabel?.text = "历史数据"
+                cell.detailTextLabel?.text = ""
             case 5:
                 cell.textLabel?.text = "滤网检测"
+                cell.detailTextLabel?.text = ""
             case 6:
                 cell.textLabel?.text = ""
             default:

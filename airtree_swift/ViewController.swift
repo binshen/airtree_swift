@@ -46,9 +46,8 @@ class ViewController: UIViewController, UITextFieldDelegate, UIAlertViewDelegate
     @IBAction func clickLoginButton(_ sender: UIButton) {
         let username = TxtUsername.text!;
         let password = TxtPassword.text!;
-        let baseURL = "http://api.7drlb.com";
         let params = ["username": username, "password": password]
-        let request = MKNetworkRequest(urlString: baseURL + "/user/login", params: params, bodyData: nil, httpMethod: "POST");
+        let request = MKNetworkRequest(urlString: MORAL_API_BASE_PATH + "/user/login", params: params, bodyData: nil, httpMethod: "POST");
         request? .addCompletionHandler { response in
             let jsonStr = response?.responseAsString
             let data = jsonStr!.data(using: .utf8)!
@@ -58,6 +57,8 @@ class ViewController: UIViewController, UITextFieldDelegate, UIAlertViewDelegate
                     let alert: UIAlertView = UIAlertView(title: "登录失败", message: "输入的用户名或密码错误.", delegate: self, cancelButtonTitle: "OK")
                     alert.show()
                 } else {
+                    _loginUser = user
+
                     let nav = self.storyboard!.instantiateViewController(withIdentifier: "NavMainViewController")
                     self.present(nav, animated: true)
                 }

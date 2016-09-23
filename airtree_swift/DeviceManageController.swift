@@ -42,9 +42,8 @@ class DeviceManageController: UITableViewController {
     }
 
     func autoRefreshData() {
-        let baseURL = "http://api.7drlb.com"
-        let userID = "5766a035f08504e7cd3fb33e"
-        let request = MKNetworkRequest(urlString: baseURL + "/user/\(userID)/get_device_info", params: nil, bodyData: nil, httpMethod: "GET");
+        let userID = _loginUser["_id"] as! String //"5766a035f08504e7cd3fb33e"
+        let request = MKNetworkRequest(urlString: MORAL_API_BASE_PATH + "/user/\(userID)/get_device_info", params: nil, bodyData: nil, httpMethod: "GET");
         request? .addCompletionHandler { response in
             let jsonStr = response?.responseAsString
             let data = jsonStr!.data(using: .utf8)!
@@ -101,8 +100,7 @@ class DeviceManageController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("+++++++++++++++++++++++")
-        print(self.devices[indexPath.row])
+        _selectedDevice = self.devices[indexPath.row]
     }
 
 
