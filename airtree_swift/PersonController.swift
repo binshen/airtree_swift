@@ -53,7 +53,7 @@ class PersonController: UITableViewController {
         switch indexPath.row {
             case 0:
                 cell.textLabel?.text = "昵称"
-                cell.detailTextLabel?.text = "nickname"
+                cell.detailTextLabel?.text = _loginUser["nickname"] as! String
             case 1:
                 cell.textLabel?.text = "改密码"
                 cell.detailTextLabel?.text = ""
