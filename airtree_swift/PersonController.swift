@@ -83,7 +83,7 @@ class PersonController: UITableViewController {
         var viewController = self.storyboard!.instantiateViewController(withIdentifier: "PersonNicknameController")
         if(index == 1) {
             viewController = self.storyboard!.instantiateViewController(withIdentifier: "PersonPasswordController")
-        } else if(index == 2) {
+        } else if(index == 3) {
             viewController = self.storyboard!.instantiateViewController(withIdentifier: "PersonFeedbackController")
         } else {
             //TODO
