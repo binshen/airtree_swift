@@ -121,6 +121,10 @@
 		FDB50B921D92C28F00627BED /* very.gif in Resources */ = {isa = PBXBuildFile; fileRef = FDB50B501D92C28F00627BED /* very.gif */; };
 		FDBEC3951D92CD9200D3DC69 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBEC3941D92CD9200D3DC69 /* RegisterController.swift */; };
 		FDBEC3971D92CDD800D3DC69 /* ForgetPwdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBEC3961D92CDD800D3DC69 /* ForgetPwdController.swift */; };
+		FDF23AA41D94DEB80046AD5E /* libsmartlinklib_7x.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDF23AA31D94DEB80046AD5E /* libsmartlinklib_7x.a */; };
+		FDF23AA51D94DEEC0046AD5E /* HFSmartLink.h in Sources */ = {isa = PBXBuildFile; fileRef = FD61E5381D942D6700C9AA91 /* HFSmartLink.h */; };
+		FDF23AA61D94DEF00046AD5E /* HFSmartLinkDeviceInfo.h in Sources */ = {isa = PBXBuildFile; fileRef = FD61E5391D942D6700C9AA91 /* HFSmartLinkDeviceInfo.h */; };
+		FDF23AA71D94DEF30046AD5E /* smartlinklib_7x.h in Sources */ = {isa = PBXBuildFile; fileRef = FD61E53A1D942D6700C9AA91 /* smartlinklib_7x.h */; };
 		FDF37E601D93664B00C00702 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF37E5F1D93664B00C00702 /* MainController.swift */; };
 		FDF37E731D93845000C00702 /* MKNetworkKit in Resources */ = {isa = PBXBuildFile; fileRef = FDF37E721D93845000C00702 /* MKNetworkKit */; };
 /* End PBXBuildFile section */
@@ -269,6 +273,7 @@
 		FDB50B501D92C28F00627BED /* very.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = very.gif; path = images/very.gif; sourceTree = "<group>"; };
 		FDBEC3941D92CD9200D3DC69 /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		FDBEC3961D92CDD800D3DC69 /* ForgetPwdController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetPwdController.swift; sourceTree = "<group>"; };
+		FDF23AA31D94DEB80046AD5E /* libsmartlinklib_7x.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsmartlinklib_7x.a; sourceTree = "<group>"; };
 		FDF37E5F1D93664B00C00702 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		FDF37E721D93845000C00702 /* MKNetworkKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MKNetworkKit; path = /Users/bin.shen/ios_dev/airtree_swift/MKNetworkKit; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
@@ -278,6 +283,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDF23AA41D94DEB80046AD5E /* libsmartlinklib_7x.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +495,7 @@
 		FDF37E621D93708400C00702 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FDF23AA31D94DEB80046AD5E /* libsmartlinklib_7x.a */,
 				FD568A951D939ACC003CEB5F /* MKNetworkKit */,
 			);
 			name = Frameworks;
@@ -698,6 +705,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDF23AA71D94DEF30046AD5E /* smartlinklib_7x.h in Sources */,
+				FDF23AA61D94DEF00046AD5E /* HFSmartLinkDeviceInfo.h in Sources */,
+				FDF23AA51D94DEEC0046AD5E /* HFSmartLink.h in Sources */,
 				FD568AE51D939C10003CEB5F /* NSDate+RFC1123.h in Sources */,
 				FD568AE61D939C10003CEB5F /* NSDate+RFC1123.m in Sources */,
 				FD568AF51D93C0DF003CEB5F /* PersonController.swift in Sources */,

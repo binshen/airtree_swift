@@ -8,12 +8,31 @@
 
 import UIKit
 
-class DeviceAddController: UIViewController {
+class DeviceAddController: UIViewController, UITextFieldDelegate {
+    
+    @IBOutlet weak var txtSSID: UITextField!
+    @IBOutlet weak var txtPwd: UITextField!
+    @IBOutlet weak var butConnect: UIButton!
+    @IBOutlet weak var progress: UIProgressView!
+    @IBOutlet weak var switcher: UISwitch!
 
+//    var smtlk: HFSmartLink!
+//    var isconnecting: Bool!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+//        self.smtlk = HFSmartLink.shareInstence()
+//        smtlk.isConfigOneDevice = true
+//        smtlk.waitTimers = 30
+//
+//        self.isconnecting = false
+//        self.progress.progress = 0.0
+//        self.switcher.isOn = smtlk.isConfigOneDevice
+//
+//        self.showWifiSsid()
+//        self.txtPwd.delegate = self
+//        self.txtSSID.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,6 +40,11 @@ class DeviceAddController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+
+
+    func showWifiSsid() {
+
+    }
 
     /*
     // MARK: - Navigation

@@ -11,7 +11,7 @@
         <scene sceneID="3nw-DT-Edj">
             <objects>
                 <navigationController id="hd2-64-FJq" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VTT-6p-van">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="VTT-6p-van">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -884,18 +884,18 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DN5-J3-rgC" id="s4g-9b-Myu">
-                                    <frame key="frameInset" width="342" height="43"/>
+                                    <frame key="frameInset" width="342" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Pn2-TQ-IHX">
-                                            <frame key="frameInset" minX="55" minY="12" width="32" height="20"/>
+                                            <frame key="frameInset" minX="55" minY="12" width="31.5" height="19.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ALl-sp-Usy">
-                                            <frame key="frameInset" minX="284" minY="12" width="56" height="20"/>
+                                            <frame key="frameInset" minX="284" minY="12" width="56" height="19.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1144,7 +1144,7 @@
         <!--添加设备-->
         <scene sceneID="1EF-ly-OzT">
             <objects>
-                <viewController id="ERZ-2C-D0u" customClass="DeviceAddController" sceneMemberID="viewController">
+                <viewController id="ERZ-2C-D0u" customClass="DeviceAddController" customModule="airtree_swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rvR-1m-s20"/>
                         <viewControllerLayoutGuide type="bottom" id="YcP-EX-f1T"/>
@@ -1166,19 +1166,12 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KXa-Rn-qFq">
-                                <connections>
-                                    <action selector="swPressed:" destination="ERZ-2C-D0u" eventType="valueChanged" id="lcS-lG-biN"/>
-                                </connections>
-                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KXa-Rn-qFq"/>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhX-0L-gfB">
                                 <color key="backgroundColor" red="0.095261928649999994" green="0.67802096000000001" blue="0.92264441289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="开始连接">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="butPressd:" destination="ERZ-2C-D0u" eventType="touchUpInside" id="c1I-MS-imw"/>
-                                </connections>
                             </button>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Kkd-7M-wal"/>
                         </subviews>
@@ -1204,11 +1197,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="添加设备" id="TTT-28-WI5"/>
                     <connections>
-                        <outlet property="butConnect" destination="yhX-0L-gfB" id="yxk-xi-Thd"/>
-                        <outlet property="progress" destination="Kkd-7M-wal" id="HwN-or-4OT"/>
-                        <outlet property="switcher" destination="KXa-Rn-qFq" id="Wpj-lJ-mBT"/>
-                        <outlet property="txtPwd" destination="UL2-ow-OdG" id="5ng-Bh-VEW"/>
-                        <outlet property="txtSSID" destination="aKN-u1-UfS" id="BB2-Bd-hvA"/>
+                        <outlet property="butConnect" destination="yhX-0L-gfB" id="PqV-Cs-iQm"/>
+                        <outlet property="progress" destination="Kkd-7M-wal" id="N5w-SK-nQ6"/>
+                        <outlet property="switcher" destination="KXa-Rn-qFq" id="o6Z-0w-TrO"/>
+                        <outlet property="txtPwd" destination="UL2-ow-OdG" id="emZ-Qd-9kx"/>
+                        <outlet property="txtSSID" destination="aKN-u1-UfS" id="zjN-Iy-R9c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Npl-pS-rTE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1219,7 +1212,7 @@
         <scene sceneID="Yqw-ti-xsQ">
             <objects>
                 <navigationController storyboardIdentifier="NavMainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DdM-NY-JPA" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9i2-z9-6aV">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="9i2-z9-6aV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.095261928649999994" green="0.67802096000000001" blue="0.92264441289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
