@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3514A88216964923E1B943B2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3514A5469B5A6C9986CA1596 /* Constants.swift */; };
+		3514A88216964923E1B943B2 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3514A5469B5A6C9986CA1596 /* Global.swift */; };
 		FD568A4C1D9387CC003CEB5F /* MKNetworkKit in Resources */ = {isa = PBXBuildFile; fileRef = FD568A4B1D9387CC003CEB5F /* MKNetworkKit */; };
 		FD568A511D938B48003CEB5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB50A5E1D92C19600627BED /* ViewController.swift */; };
 		FD568ACE1D939BE7003CEB5F /* MKCache.h in Sources */ = {isa = PBXBuildFile; fileRef = FD568AC51D939BE7003CEB5F /* MKCache.h */; };
@@ -148,7 +148,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3514A5469B5A6C9986CA1596 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3514A5469B5A6C9986CA1596 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		FD568A4B1D9387CC003CEB5F /* MKNetworkKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MKNetworkKit; path = /Users/bin.shen/ios_dev/airtree_swift/MKNetworkKit; sourceTree = "<absolute>"; };
 		FD568AC51D939BE7003CEB5F /* MKCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MKCache.h; path = MKNetworkKit/MKCache.h; sourceTree = "<group>"; };
 		FD568AC61D939BE7003CEB5F /* MKCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MKCache.m; path = MKNetworkKit/MKCache.m; sourceTree = "<group>"; };
@@ -401,7 +401,7 @@
 				FD61E52F1D942B5400C9AA91 /* DeviceViewController.swift */,
 				FD61E5311D942B6800C9AA91 /* MonitorController.swift */,
 				FD61E5331D942B7700C9AA91 /* MonitorContentController.swift */,
-				3514A5469B5A6C9986CA1596 /* Constants.swift */,
+				3514A5469B5A6C9986CA1596 /* Global.swift */,
 			);
 			path = airtree_swift;
 			sourceTree = "<group>";
@@ -757,7 +757,7 @@
 				FDF37E601D93664B00C00702 /* MainController.swift in Sources */,
 				FD61E52A1D942AF100C9AA91 /* DeviceDetailReviseController.swift in Sources */,
 				FD61E5281D9424F500C9AA91 /* DeviceInfoController.swift in Sources */,
-				3514A88216964923E1B943B2 /* Constants.swift in Sources */,
+				3514A88216964923E1B943B2 /* Global.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
