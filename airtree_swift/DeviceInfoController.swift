@@ -131,7 +131,7 @@ class DeviceInfoController: UITableViewController, UIAlertViewDelegate {
                 cell.detailTextLabel?.text = device?.value(forKey: "status") as? Int == 1 ? "主机" : "从机"
             case 3:
                 cell.textLabel?.text = "MAC"
-                cell.detailTextLabel?.text = device?.value(forKey: "mac") as? String
+                cell.detailTextLabel?.text = (device?.value(forKey: "mac") as? String)?.uppercased()
             case 4:
                 cell.textLabel?.text = "历史数据"
                 cell.detailTextLabel?.text = ""
