@@ -126,7 +126,7 @@ class DeviceViewController: UIViewController {
         self.suggest.numberOfLines = 2
 
         let status = device?.value(forKey: "status") as! Int
-        let data = device?.value(forKey: "data") as! NSDictionary?
+        let data = device?.value(forKey: "data") as? NSDictionary
         if status == 1 {
             self.suggest.text = "云端在线"
 
@@ -161,6 +161,7 @@ class DeviceViewController: UIViewController {
             self.formaldehydeValue.text = "0mg/m³"
             self.suggest.text = ""
             self.airQuality.text = "未知"
+            return
         } else {
             let p1 = data?.value(forKey: "p1") as! Int
             if p1 == 3 {
