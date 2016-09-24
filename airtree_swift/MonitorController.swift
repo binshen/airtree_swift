@@ -10,6 +10,9 @@ import UIKit
 
 class MonitorController: UIViewController {
 
+    var pageIndex: Int!
+    var pageDevice: NSDictionary!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
