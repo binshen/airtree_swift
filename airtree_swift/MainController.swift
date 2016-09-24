@@ -20,7 +20,7 @@ class MainController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var bottomView: UIView!
     
     var contentList = [AnyObject]()
-    var viewControllers = [UIViewController?]()
+    var viewControllers = [DeviceViewController?]()
 
     var timer: Timer!
     var numberPages: Int!
@@ -88,7 +88,7 @@ class MainController: UIViewController, UIScrollViewDelegate {
                 //self.scrollView.subviews
                 self.numberPages = self.contentList.count
 
-                var controllers = [UIViewController?]()
+                var controllers = [DeviceViewController?]()
                 for i in 0...self.numberPages {
                     controllers.append(nil)
                 }
@@ -126,12 +126,18 @@ class MainController: UIViewController, UIScrollViewDelegate {
 
         var controller = self.viewControllers[page]
         if controller == nil {
-            controller = self.storyboard?.instantiateViewController(withIdentifier: "DeviceViewController")
+            controller = self.storyboard?.instantiateViewController(withIdentifier: "DeviceViewController") as! DeviceViewController
             self.viewControllers[page] = controller
         }
 
         if controller?.view.superview == nil {
+            var frame = self.scrollView.frame
+            frame.origin.x = frame.width * CGFloat(page)
+            frame.origin.y = 0
+            controller?.view.frame = frame
 
+            controller?.initViews(initController: self, self.contentList[page] as! NSDictionary)
+            self.scrollView.addSubview(controller!.view)
         }
     }
 

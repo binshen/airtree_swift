@@ -9,7 +9,34 @@
 import UIKit
 
 class DeviceViewController: UIViewController {
+    
+    @IBOutlet weak var electric: UIImageView!
+    @IBOutlet weak var airQuality: UILabel!
+    @IBOutlet weak var main: UILabel!
+    @IBOutlet weak var mainLable: UILabel!
+    @IBOutlet weak var mainImage: UIImageView!
+    @IBOutlet weak var lightImage: UIImageView!
+    @IBOutlet weak var suggest: UILabel!
 
+    @IBOutlet weak var pm25Value: UILabel!
+    @IBOutlet weak var temperatureValue: UILabel!
+    @IBOutlet weak var humidityValue: UILabel!
+    @IBOutlet weak var formaldehydeValue: UILabel!
+    
+    @IBOutlet weak var pm25Label: UILabel!
+    @IBOutlet weak var temperatureLabel: UILabel!
+    @IBOutlet weak var humidityLabel: UILabel!
+    @IBOutlet weak var formalehydeLabel: UILabel!
+    
+    @IBOutlet weak var viewPm25: UIView!
+    @IBOutlet weak var viewTemperature: UIView!
+    @IBOutlet weak var viewHumidity: UIView!
+    @IBOutlet weak var viewFormaldehyde: UIView!
+    
+    @IBOutlet weak var divider1: UIView!
+    @IBOutlet weak var divider2: UIView!
+    @IBOutlet weak var divider3: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +48,11 @@ class DeviceViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+
+
+    func initViews(initController controller: UIViewController, _ device: NSDictionary) {
+
+    }
 
     /*
     // MARK: - Navigation
