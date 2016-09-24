@@ -351,8 +351,6 @@
 		FDB50A501D92C19600627BED = {
 			isa = PBXGroup;
 			children = (
-				FD6B6A771D95894F005F51AF /* BackgroundRunner.h */,
-				FD6B6A781D95894F005F51AF /* BackgroundRunner.m */,
 				FDB50A5B1D92C19600627BED /* airtree_swift */,
 				FDB50A701D92C19600627BED /* airtree_swiftTests */,
 				FDB50A7B1D92C19600627BED /* airtree_swiftUITests */,
@@ -368,6 +366,8 @@
 				FD61E53C1D942D6700C9AA91 /* UIImage+animatedGIF.m */,
 				FDF23AA81D94ED4D0046AD5E /* DateTimePicker.h */,
 				FDF23AA91D94ED4D0046AD5E /* DateTimePicker.m */,
+				FD6B6A771D95894F005F51AF /* BackgroundRunner.h */,
+				FD6B6A781D95894F005F51AF /* BackgroundRunner.m */,
 			);
 			sourceTree = "<group>";
 		};
