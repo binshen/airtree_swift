@@ -14,7 +14,8 @@ class MonitorController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var ImgStatus: UIImageView!
     @IBOutlet weak var LabelStatus: UILabel!
-
+    @IBOutlet weak var bottomView: UIView!
+    
     var pageIndex: Int!
     var pageDevice: NSDictionary!
     
@@ -23,12 +24,6 @@ class MonitorController: UIViewController, UIScrollViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
 
         self.scrollView.isPagingEnabled = true
         self.scrollView.showsHorizontalScrollIndicator = false
@@ -40,9 +35,13 @@ class MonitorController: UIViewController, UIScrollViewDelegate {
 
         let rect = self.scrollView.frame
 
+        var width = Global.screen_width()
+        if Global.is_iphone6() || Global.is_iphone5() || Global.is_iphone_4_or_less() {
+            width = Global.screen_width() + 8
+        }
 
-        self.scrollView.frame = CGRect(x: rect.origin.x, y: rect.origin.y, width: rect.size.width, height: rect.size.height)
-        self.scrollView.contentSize = CGSize(width: rect.size.width * 4, height: 0)
+        self.scrollView.frame = CGRect(x: rect.origin.x, y: rect.origin.y, width: width, height: rect.size.height)
+        self.scrollView.contentSize = CGSize(width: width * 4, height: 0)
 
         self.pageControl.hidesForSinglePage = true
         self.pageControl.isUserInteractionEnabled = false
@@ -73,8 +72,33 @@ class MonitorController: UIViewController, UIScrollViewDelegate {
             self.navigationItem.title = "甲醛"
         }
 
-        //self.scrollView.contentSize = CGPoint()
+        self.scrollView.contentOffset = CGPoint(x: self.scrollView.frame.width, y: 0)
         self.pageControl.currentPage = self.pageIndex
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+
+        if Global.is_iphone_4_or_less() {
+            self.ImgStatus.frame = CGRect(x: self.ImgStatus.frame.origin.x, y: self.ImgStatus.frame.origin.y - 5, width: self.ImgStatus.frame.size.width*0.7, height: self.ImgStatus.frame.size.height*0.7)
+
+            self.LabelStatus.center = CGPoint(x: self.LabelStatus.center.x, y: self.LabelStatus.center.y - 25)
+            self.LabelStatus.font = UIFont.systemFont(ofSize: 15)
+
+            var heightConstraint: NSLayoutConstraint!
+            for constraint in self.bottomView.constraints {
+                if constraint.firstAttribute == NSLayoutAttribute.height {
+                    heightConstraint = constraint
+                    break
+                }
+            }
+            heightConstraint.constant = 60;
+
+        } else if Global.is_iphone5() {
+            var frame = self.LabelStatus.frame
+            frame.size.width = 220
+            self.LabelStatus.frame = frame
+        }
     }
 
     func loadScrollViewWithPage(_ page: Int) {
@@ -130,9 +154,24 @@ class MonitorController: UIViewController, UIScrollViewDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
+
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView!) {
+        let pageWidth = self.scrollView.frame.width
+        let page = floor((scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1
+        self.pageControl.currentPage = Int(page);
+
+        if page == 0 {
+            self.navigationItem.title = "PM2.5"
+        } else if page == 1 {
+            self.navigationItem.title = "温度"
+        } else if page == 2 {
+            self.navigationItem.title = "温度"
+        } else {
+            self.navigationItem.title = "甲醛"
+        }
+    }
+/*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
