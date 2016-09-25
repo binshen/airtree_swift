@@ -27,7 +27,7 @@ class DeviceInfoController: UITableViewController, UIAlertViewDelegate {
             self.autoRefreshData()
         }
 
-        if false {
+        if Global.is_iphone_4_or_less() {
             var frame = self.bottomView.frame
             frame.size.height = 60
             self.bottomView.frame = frame
@@ -80,9 +80,9 @@ class DeviceInfoController: UITableViewController, UIAlertViewDelegate {
             let indexPath = IndexPath(row: 5, section: 0)
             let cell = self.tableView.cellForRow(at: indexPath)
             cell?.detailTextLabel?.text = self.checkStatus
-            if false {
+            if Global.is_iphone5() {
                 cell?.detailTextLabel?.font = UIFont.systemFont(ofSize: 15)
-            } else if false {
+            } else if Global.is_iphone_4_or_less() {
                 cell?.detailTextLabel?.font = UIFont.systemFont(ofSize: 14)
             }
         }
@@ -118,7 +118,7 @@ class DeviceInfoController: UITableViewController, UIAlertViewDelegate {
             case 0:
                 cell.textLabel?.text = "设备编码"
                 cell.detailTextLabel?.text = device?.value(forKey: "_id") as? String
-                if false { //TODO
+                if Global.is_iphone_4_or_less() {
                     cell.detailTextLabel?.font = UIFont.systemFont(ofSize: 15)
                 }
             case 1:

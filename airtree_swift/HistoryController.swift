@@ -43,7 +43,7 @@ class HistoryController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
 
-        if false {
+        if Global.is_iphone5() {
             self.DateSelect.center = CGPoint(x: self.DateSelect.center.x, y: self.DateSelect.center.y - 20);
             self.mainValue.center = CGPoint(x: self.mainValue.center.x, y: self.mainValue.center.y - 50);
             self.LabelDescription.center = CGPoint(x: self.LabelDescription.center.x, y: self.LabelDescription.center.y + 40);
@@ -59,9 +59,9 @@ class HistoryController: UIViewController {
             self.humidityLabel.font = UIFont.systemFont(ofSize: 14);
             self.formaldehydeValue.font = UIFont.systemFont(ofSize: 14);
             self.formaldehydeLabel.font = UIFont.systemFont(ofSize: 14);
-        } else if false {
+        } else if Global.is_iphone6() {
             self.mainValue.center = CGPoint(x: self.mainValue.center.x, y: self.mainValue.center.y - 15);
-        } else if false {
+        } else if Global.is_iphone6p() {
             self.DateSelect.center = CGPoint(x: self.DateSelect.center.x, y: self.DateSelect.center.y + 25);
             self.mainValue.center = CGPoint(x: self.mainValue.center.x, y: self.mainValue.center.y + 30);
             self.LabelDescription.font = UIFont.systemFont(ofSize: 20)
@@ -134,7 +134,7 @@ class HistoryController: UIViewController {
         let screenWidth = size.width
         let screenHeight = size.height
 
-        if false {
+        if Global.is_iphone5() {
             self.pickerView = DateTimePicker(frame: CGRect(x: 0, y: self.view.frame.size.height - 250, width: screenWidth, height: screenHeight / 2))
         } else {
             self.pickerView = DateTimePicker(frame: CGRect(x: 0, y: self.view.frame.size.height - 300, width: screenWidth, height: screenHeight / 2))

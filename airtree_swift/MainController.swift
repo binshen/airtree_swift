@@ -64,8 +64,28 @@ class MainController: UIViewController, UIScrollViewDelegate {
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
     }
 
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+
+        if Global.is_iphone5() || Global.is_iphone_4_or_less() {
+            var heightConstraint: NSLayoutConstraint!
+            for constraint in self.bottomView.constraints {
+                if constraint.firstAttribute == NSLayoutAttribute.height {
+                    heightConstraint = constraint
+                    break
+                }
+            }
+            if Global.is_iphone5() {
+                heightConstraint.constant = 80;
+            } else {
+                heightConstraint.constant = 60;
+            }
+        }
+    }
+
+
     override func viewDidAppear(_ animated: Bool) {
-        //self.scrollView.contentSize = CGSize(width: self.scrollView.frame.size.width * CGFloat(self.numberPages), height: self.scrollView.frame.size.height)
+        self.scrollView.contentSize = CGSize(width: self.scrollView.frame.size.width * CGFloat(self.numberPages), height: self.scrollView.frame.size.height)
         super.viewDidAppear(animated)
     }
 
@@ -145,8 +165,34 @@ class MainController: UIViewController, UIScrollViewDelegate {
         self.initHomePage()
     }
 
-    func doDoubleTap() {
-        print("*********************")
+    func doDoubleTap(_ sender: UITapGestureRecognizer) {
+        if sender.state == UIGestureRecognizerState.recognized {
+            self.timer.invalidate()
+            self.timer = Timer.scheduledTimer(timeInterval: 6, target: self, selector: #selector(autoRefreshData), userInfo: nil, repeats: true)
+            self.initHomePage()
+        }
+    }
+
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView!) {
+        let pageWidth = self.scrollView.frame.width
+        let page = floor((scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1
+        self.pageControl.currentPage = Int(page);
+
+        let device = self.contentList[Int(page)] as? NSDictionary
+        if device?.value(forKey: "name") != nil {
+            self.navigationItem.title = device?.value(forKey: "name") as! String
+        } else if device?.value(forKey: "mac") != nil {
+            self.navigationItem.title = device?.value(forKey: "mac") as! String
+        } else {
+            self.navigationItem.title = "房间"
+        }
+    }
+
+    func scrollViewDidScroll(_ scrollView: UIScrollView!) {
+        let pageWidth = self.scrollView.frame.width
+        let page = floor((scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1
+        // !!! but here is another problem. You should find reference to appropriate pageControl
+        self.pageControl.currentPage = Int(page);
     }
 
     /*
