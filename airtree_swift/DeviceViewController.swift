@@ -52,7 +52,126 @@ class DeviceViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
 
+        let width = UIScreen.main.bounds.width
+        self.divider1.frame = CGRect(x: width/4, y: 303, width: 1, height: 88)
+        self.divider2.frame = CGRect(x: width/2, y: 303, width: 1, height: 88)
+        self.divider3.frame = CGRect(x: width/4*3, y: 303, width: 1, height: 88)
 
+        if Global.is_iphone6p() {
+            self.mainImage.center = CGPoint(x: self.mainImage.center.x, y: self.mainImage.center.y + 15)
+            self.lightImage.center = CGPoint(x: self.lightImage.center.x, y: self.lightImage.center.y + 15)
+
+            self.airQuality.center = CGPoint(x: self.airQuality.center.x, y: self.airQuality.center.y + 15)
+            self.main.center = CGPoint(x: self.main.center.x, y: self.main.center.y + 25)
+            self.mainLable.center = CGPoint(x: self.mainLable.center.x, y: self.mainLable.center.y + 40)
+            self.suggest.center = CGPoint(x: self.suggest.center.x, y: self.suggest.center.y + 80)
+
+            self.divider1.center = CGPoint(x: self.divider1.center.x, y: self.divider1.center.y + 140)
+            self.divider2.center = CGPoint(x: self.divider2.center.x, y: self.divider2.center.y + 140)
+            self.divider3.center = CGPoint(x: self.divider3.center.x, y: self.divider3.center.y + 140)
+
+            self.viewPm25.center = CGPoint(x: self.viewPm25.center.x - 25, y: self.viewPm25.center.y + 120)
+            self.viewTemperature.center = CGPoint(x: self.viewTemperature.center.x - 8, y: self.viewTemperature.center.y + 120)
+            self.viewHumidity.center = CGPoint(x: self.viewHumidity.center.x + 8, y: self.viewHumidity.center.y + 120)
+            self.viewFormaldehyde.center = CGPoint(x: self.viewFormaldehyde.center.x + 25, y: self.viewFormaldehyde.center.y + 120)
+
+            self.electric.frame = CGRect(x: self.electric.frame.origin.x + 103, y: self.electric.frame.origin.y + 10, width: self.electric.frame.size.width*0.5, height: self.electric.frame.size.height*0.5)
+            self.mainImage.frame = CGRect(x: self.mainImage.frame.origin.x, y: self.mainImage.frame.origin.y, width: self.mainImage.frame.size.width*1.1, height: self.mainImage.frame.size.height*1.1)
+            self.lightImage.frame = CGRect(x: self.lightImage.frame.origin.x - 15, y: self.lightImage.frame.origin.y - 10, width: self.lightImage.frame.size.width*1.3, height: self.lightImage.frame.size.height*1.3)
+
+            self.airQuality.font = UIFont.systemFont(ofSize: 70)
+            self.main.font = UIFont.systemFont(ofSize: 90)
+            self.mainLable.font = UIFont.systemFont(ofSize: 18)
+            self.suggest.font = UIFont.systemFont(ofSize: 18)
+
+            self.pm25Label.font = UIFont.systemFont(ofSize: 18)
+            self.temperatureLabel.font = UIFont.systemFont(ofSize: 18)
+            self.humidityLabel.font = UIFont.systemFont(ofSize: 18)
+            self.formalehydeLabel.font = UIFont.systemFont(ofSize: 18)
+            self.pm25Value.font = UIFont.systemFont(ofSize: 17)
+            self.temperatureValue.font = UIFont.systemFont(ofSize: 17)
+            self.humidityValue.font = UIFont.systemFont(ofSize: 17)
+            self.formaldehydeValue.font = UIFont.systemFont(ofSize: 17)
+        } else if Global.is_iphone6() {
+            self.mainImage.center = CGPoint(x: self.mainImage.center.x, y: self.mainImage.center.y + 10);
+            self.lightImage.center = CGPoint(x: self.lightImage.center.x + 5, y: self.lightImage.center.y + 10);
+
+            self.airQuality.center = CGPoint(x: self.airQuality.center.x, y: self.airQuality.center.y + 10);
+            self.main.center = CGPoint(x: self.main.center.x, y: self.main.center.y + 15);
+            self.mainLable.center = CGPoint(x: self.mainLable.center.x, y: self.mainLable.center.y + 30);
+            self.suggest.center = CGPoint(x: self.suggest.center.x, y: self.suggest.center.y + 40);
+
+            self.divider1.center = CGPoint(x: self.divider1.center.x, y: self.divider1.center.y + 70);
+            self.divider2.center = CGPoint(x: self.divider2.center.x, y: self.divider2.center.y + 70);
+            self.divider3.center = CGPoint(x: self.divider3.center.x, y: self.divider3.center.y + 70);
+
+            self.viewPm25.center = CGPoint(x: self.viewPm25.center.x - 10, y: self.viewPm25.center.y + 50);
+            self.viewTemperature.center = CGPoint(x: self.viewTemperature.center.x - 4, y: self.viewTemperature.center.y + 50);
+            self.viewHumidity.center = CGPoint(x: self.viewHumidity.center.x, y: self.viewHumidity.center.y + 50);
+            self.viewFormaldehyde.center = CGPoint(x: self.viewFormaldehyde.center.x + 5, y: self.viewFormaldehyde.center.y + 50);
+
+            self.electric.frame = CGRect(x: self.electric.frame.origin.x + 118, y: self.electric.frame.origin.y + 10, width: self.electric.frame.size.width*0.4, height: self.electric.frame.size.height*0.4);
+            self.lightImage.frame = CGRect(x: self.lightImage.frame.origin.x - 10, y: self.lightImage.frame.origin.y - 10, width: self.lightImage.frame.size.width*1.2, height: self.lightImage.frame.size.height*1.2);
+        } else if Global.is_iphone5() {
+            self.lightImage.center = CGPoint(x: self.lightImage.center.x, y: self.lightImage.center.y)
+
+            self.airQuality.center = CGPoint(x: self.airQuality.center.x, y: self.airQuality.center.y - 15)
+            self.main.center = CGPoint(x: self.main.center.x, y: self.main.center.y - 20)
+            self.mainLable.center = CGPoint(x: self.mainLable.center.x, y: self.mainLable.center.y - 20)
+            self.suggest.center = CGPoint(x: self.suggest.center.x, y: self.suggest.center.y - 20)
+
+            self.divider1.center = CGPoint(x: self.divider1.center.x, y: self.divider1.center.y - 10)
+            self.divider2.center = CGPoint(x: self.divider2.center.x, y: self.divider2.center.y - 10)
+            self.divider3.center = CGPoint(x: self.divider3.center.x, y: self.divider3.center.y - 10)
+
+            self.viewPm25.center = CGPoint(x: self.viewPm25.center.x + 10, y: self.viewPm25.center.y - 30)
+            self.viewTemperature.center = CGPoint(x: self.viewTemperature.center.x, y: self.viewTemperature.center.y - 30)
+            self.viewHumidity.center = CGPoint(x: self.viewHumidity.center.x - 10, y: self.viewHumidity.center.y - 30)
+            self.viewFormaldehyde.center = CGPoint(x: self.viewFormaldehyde.center.x - 15, y: self.viewFormaldehyde.center.y - 30)
+
+            self.electric.frame = CGRect(x: self.electric.frame.origin.x + 103, y: self.electric.frame.origin.y, width: self.electric.frame.width*0.4, height: self.electric.frame.height*0.4)
+            self.mainImage.frame = CGRect(x: self.mainImage.frame.origin.x, y: self.mainImage.frame.origin.y, width: self.mainImage.frame.width*0.8, height: self.mainImage.frame.height*0.8)
+            self.lightImage.frame = CGRect(x: self.lightImage.frame.origin.x, y: self.lightImage.frame.origin.y - 8, width: self.lightImage.frame.width, height: self.lightImage.frame.height)
+
+            self.airQuality.font = UIFont(name: self.airQuality.font.familyName, size: self.airQuality.font.pointSize - 5)
+            self.main.font = UIFont(name: self.main.font.familyName, size: self.main.font.pointSize - 10)
+
+            self.pm25Label.font = UIFont.systemFont(ofSize: 13)
+            self.temperatureLabel.font = UIFont.systemFont(ofSize: 13)
+            self.humidityLabel.font = UIFont.systemFont(ofSize: 13)
+            self.formalehydeLabel.font = UIFont.systemFont(ofSize: 13)
+            self.pm25Value.font = UIFont.systemFont(ofSize: 12)
+            self.temperatureValue.font = UIFont.systemFont(ofSize: 12)
+            self.humidityValue.font = UIFont.systemFont(ofSize: 12)
+            self.formaldehydeValue.font = UIFont.systemFont(ofSize: 12)
+        } else {
+            self.electric.center = CGPoint(x: self.electric.center.x + 40, y: self.electric.center.y - 8);
+            self.mainImage.center = CGPoint(x: self.mainImage.center.x, y: self.mainImage.center.y - 10);
+            self.lightImage.center = CGPoint(x: self.lightImage.center.x - 20, y: self.lightImage.center.y - 15);
+
+            self.airQuality.center = CGPoint(x: self.airQuality.center.x, y: self.airQuality.center.y - 35);
+            self.main.center = CGPoint(x: self.main.center.x, y: self.main.center.y - 50);
+            self.mainLable.center = CGPoint(x: self.mainLable.center.x, y: self.mainLable.center.y - 50);
+            self.suggest.center = CGPoint(x: self.suggest.center.x, y: self.suggest.center.y - 50);
+
+
+            self.divider1.center = CGPoint(x: self.divider1.center.x, y: self.divider1.center.y - 60);
+            self.divider2.center = CGPoint(x: self.divider2.center.x, y: self.divider2.center.y - 60);
+            self.divider3.center = CGPoint(x: self.divider3.center.x, y: self.divider3.center.y - 60);
+
+            self.viewPm25.center = CGPoint(x: self.viewPm25.center.x, y: self.viewPm25.center.y - 60);
+            self.viewTemperature.center = CGPoint(x: self.viewTemperature.center.x, y: self.viewTemperature.center.y - 60);
+            self.viewHumidity.center = CGPoint(x: self.viewHumidity.center.x, y: self.viewHumidity.center.y - 60);
+            self.viewFormaldehyde.center = CGPoint(x: self.viewFormaldehyde.center.x, y: self.viewFormaldehyde.center.y - 60);
+
+
+            self.electric.frame = CGRect(x: self.electric.frame.origin.x + 30, y: self.electric.frame.origin.y, width: self.electric.frame.size.width*0.6, height: self.electric.frame.size.height*0.6);
+            self.mainImage.frame = CGRect(x: self.mainImage.frame.origin.x, y: self.mainImage.frame.origin.y, width: self.mainImage.frame.size.width*0.7, height: self.mainImage.frame.size.height*0.7);
+            self.lightImage.frame = CGRect(x: self.lightImage.frame.origin.x, y: self.lightImage.frame.origin.y, width: self.lightImage.frame.size.width*0.7, height: self.lightImage.frame.size.height*0.7);
+
+            self.airQuality.font = UIFont(name: self.airQuality.font.familyName, size: self.airQuality.font.pointSize - 10)
+            self.main.font = UIFont(name: self.main.font.familyName, size: self.main.font.pointSize - 15)
+        }
     }
 
 
