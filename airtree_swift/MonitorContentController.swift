@@ -18,14 +18,26 @@ class MonitorContentController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
 
-
+        if Global.is_iphone6() || Global.is_iphone6p() {
+            self.LabelCreatedTime.center = CGPoint(x: self.LabelCreatedTime.center.x, y: self.LabelCreatedTime.center.y - 10);
+        } else if Global.is_iphone_4_or_less() {
+            self.LabelCreatedTime.center = CGPoint(x: self.LabelCreatedTime.center.x, y: self.LabelCreatedTime.center.y - 40);
+            self.ImgChart.center = CGPoint(x: self.ImgChart.center.x, y: self.ImgChart.center.y - 60);
+            self.LabelTop.center = CGPoint(x: self.LabelTop.center.x, y: self.LabelTop.center.y - 60);
+            self.LabelMain.center = CGPoint(x: self.LabelMain.center.x, y: self.LabelMain.center.y - 60);
+            self.LabelBottom.center = CGPoint(x: self.LabelBottom.center.x, y: self.LabelBottom.center.y - 60);
+        } else {
+            self.LabelCreatedTime.center = CGPoint(x: self.LabelCreatedTime.center.x, y: self.LabelCreatedTime.center.y - 30);
+            self.ImgChart.center = CGPoint(x: self.ImgChart.center.x, y: self.ImgChart.center.y - 40);
+            self.LabelTop.center = CGPoint(x: self.LabelTop.center.x, y: self.LabelTop.center.y - 40);
+            self.LabelMain.center = CGPoint(x: self.LabelMain.center.x, y: self.LabelMain.center.y - 40);
+            self.LabelBottom.center = CGPoint(x: self.LabelBottom.center.x, y: self.LabelBottom.center.y - 40);
+        }
     }
 
 
