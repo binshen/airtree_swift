@@ -23,7 +23,7 @@ class MainController: UIViewController, UIScrollViewDelegate {
     var viewControllers = [DeviceViewController?]()
 
     var timer: Timer!
-    var numberPages: Int!
+    var numberPages: Int! = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
