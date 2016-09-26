@@ -122,6 +122,7 @@
 		FDB50B921D92C28F00627BED /* very.gif in Resources */ = {isa = PBXBuildFile; fileRef = FDB50B501D92C28F00627BED /* very.gif */; };
 		FDBEC3951D92CD9200D3DC69 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBEC3941D92CD9200D3DC69 /* RegisterController.swift */; };
 		FDBEC3971D92CDD800D3DC69 /* ForgetPwdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBEC3961D92CDD800D3DC69 /* ForgetPwdController.swift */; };
+		FDC1DA481D99553200FB3019 /* MyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC1DA471D99553200FB3019 /* MyButton.m */; };
 		FDF23AA41D94DEB80046AD5E /* libsmartlinklib_7x.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDF23AA31D94DEB80046AD5E /* libsmartlinklib_7x.a */; };
 		FDF23AA51D94DEEC0046AD5E /* HFSmartLink.h in Sources */ = {isa = PBXBuildFile; fileRef = FD61E5381D942D6700C9AA91 /* HFSmartLink.h */; };
 		FDF23AA61D94DEF00046AD5E /* HFSmartLinkDeviceInfo.h in Sources */ = {isa = PBXBuildFile; fileRef = FD61E5391D942D6700C9AA91 /* HFSmartLinkDeviceInfo.h */; };
@@ -277,6 +278,8 @@
 		FDB50B501D92C28F00627BED /* very.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = very.gif; path = images/very.gif; sourceTree = "<group>"; };
 		FDBEC3941D92CD9200D3DC69 /* RegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		FDBEC3961D92CDD800D3DC69 /* ForgetPwdController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetPwdController.swift; sourceTree = "<group>"; };
+		FDC1DA461D99553200FB3019 /* MyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyButton.h; sourceTree = "<group>"; };
+		FDC1DA471D99553200FB3019 /* MyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyButton.m; sourceTree = "<group>"; };
 		FDF23AA31D94DEB80046AD5E /* libsmartlinklib_7x.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsmartlinklib_7x.a; sourceTree = "<group>"; };
 		FDF23AA81D94ED4D0046AD5E /* DateTimePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTimePicker.h; sourceTree = "<group>"; };
 		FDF23AA91D94ED4D0046AD5E /* DateTimePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTimePicker.m; sourceTree = "<group>"; };
@@ -351,6 +354,8 @@
 		FDB50A501D92C19600627BED = {
 			isa = PBXGroup;
 			children = (
+				FDC1DA461D99553200FB3019 /* MyButton.h */,
+				FDC1DA471D99553200FB3019 /* MyButton.m */,
 				FDB50A5B1D92C19600627BED /* airtree_swift */,
 				FDB50A701D92C19600627BED /* airtree_swiftTests */,
 				FDB50A7B1D92C19600627BED /* airtree_swiftUITests */,
@@ -754,6 +759,7 @@
 				FDB50A5D1D92C19600627BED /* AppDelegate.swift in Sources */,
 				FD568A511D938B48003CEB5F /* ViewController.swift in Sources */,
 				FDBEC3971D92CDD800D3DC69 /* ForgetPwdController.swift in Sources */,
+				FDC1DA481D99553200FB3019 /* MyButton.m in Sources */,
 				FDF23AAA1D94ED4D0046AD5E /* DateTimePicker.m in Sources */,
 				FD61E5341D942B7700C9AA91 /* MonitorContentController.swift in Sources */,
 				FD568AF91D93CD8A003CEB5F /* PersonPasswordController.swift in Sources */,
