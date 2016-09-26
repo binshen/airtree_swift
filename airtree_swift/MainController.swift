@@ -85,7 +85,8 @@ class MainController: UIViewController, UIScrollViewDelegate {
 
 
     override func viewDidAppear(_ animated: Bool) {
-        self.scrollView.contentSize = CGSize(width: self.scrollView.frame.size.width * CGFloat(self.numberPages), height: self.scrollView.frame.size.height)
+        //TODO
+        //self.scrollView.contentSize = CGSize(width: self.scrollView.frame.size.width * CGFloat(self.numberPages), height: self.scrollView.frame.size.height)
         super.viewDidAppear(animated)
     }
 
