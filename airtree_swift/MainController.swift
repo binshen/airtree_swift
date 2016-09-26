@@ -76,9 +76,9 @@ class MainController: UIViewController, UIScrollViewDelegate {
                 }
             }
             if Global.is_iphone5() {
-                heightConstraint.constant = 80;
+                heightConstraint.constant = 80
             } else {
-                heightConstraint.constant = 60;
+                heightConstraint.constant = 60
             }
         }
     }
@@ -176,7 +176,7 @@ class MainController: UIViewController, UIScrollViewDelegate {
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView!) {
         let pageWidth = self.scrollView.frame.width
         let page = floor((scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1
-        self.pageControl.currentPage = Int(page);
+        self.pageControl.currentPage = Int(page)
 
         let device = self.contentList[Int(page)] as? NSDictionary
         if device?.value(forKey: "name") != nil {
@@ -192,7 +192,7 @@ class MainController: UIViewController, UIScrollViewDelegate {
         let pageWidth = self.scrollView.frame.width
         let page = floor((scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1
         // !!! but here is another problem. You should find reference to appropriate pageControl
-        self.pageControl.currentPage = Int(page);
+        self.pageControl.currentPage = Int(page)
     }
 
     /*

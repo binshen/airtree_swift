@@ -44,8 +44,8 @@ class ViewController: UIViewController, UITextFieldDelegate, UIAlertViewDelegate
     }
 
     @IBAction func clickLoginButton(_ sender: UIButton) {
-        let username = TxtUsername.text!;
-        let password = TxtPassword.text!;
+        let username = TxtUsername.text!
+        let password = TxtPassword.text!
         let params = ["username": username, "password": password]
         let url = MORAL_API_BASE_PATH + "/user/login"
         let request = MKNetworkRequest(urlString: url, params: params, bodyData: nil, httpMethod: "POST");
