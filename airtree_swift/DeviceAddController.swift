@@ -78,7 +78,7 @@
 //                                    self.navigationController?.popViewController(animated: true)
 //                                }
 //                            } else {
-//                                self.showAlertWithMsg("输入的用户名或密码错误.", "错误信息")
+//                                self.showAlertWithMsg(parsedData["error"] as! String, "错误信息")
 //                            }
 //                        }
 //                    }
