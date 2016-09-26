@@ -35,6 +35,28 @@ class PersonController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func prepare(`for` segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(`for`: segue, sender: sender)
+
+        if segue.identifier == "SegueToLogout" {
+            let userID = _loginUser?["_id"] as! String;
+            let url = MORAL_API_BASE_PATH + "/user/\(userID)/offline"
+            let request = MKNetworkRequest(urlString: url, params: nil, bodyData: nil, httpMethod: "POST");
+            request? .addCompletionHandler { response in
+                let jsonStr = response?.responseAsString
+                print(jsonStr!)
+            }
+            let engine = MKNetworkHost()
+            engine.start(request)
+
+            var userDefaults = UserDefaults.standard
+            userDefaults.setValue(nil, forKey: "user_id")
+
+            _loginUser = nil
+        }
+    }
+
+
     // MARK: - Table view data source
 
 //    override func numberOfSections(in tableView: UITableView) -> Int {
