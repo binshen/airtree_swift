@@ -85,9 +85,14 @@ class MainController: UIViewController, UIScrollViewDelegate {
 
 
     override func viewDidAppear(_ animated: Bool) {
-        //TODO
-        //self.scrollView.contentSize = CGSize(width: self.scrollView.frame.size.width * CGFloat(self.numberPages), height: self.scrollView.frame.size.height)
+        self.scrollView.contentSize = CGSize(width: self.scrollView.frame.width * CGFloat(self.numberPages), height: self.scrollView.frame.height)
         super.viewDidAppear(animated)
+    }
+
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(true)
+
+        self.timer.invalidate()
     }
 
 
@@ -106,11 +111,14 @@ class MainController: UIViewController, UIScrollViewDelegate {
             if let parsedData = try? JSONSerialization.jsonObject(with: data) as![AnyObject] {
                 self.contentList = parsedData
 
-                //self.scrollView.subviews
+                for subview in self.scrollView.subviews {
+                    subview.removeFromSuperview()
+                }
+                
                 self.numberPages = self.contentList.count
 
                 var controllers = [DeviceViewController?]()
-                for i in 0...self.numberPages {
+                for _ in 0...self.numberPages {
                     controllers.append(nil)
                 }
                 self.viewControllers = controllers
@@ -178,6 +186,13 @@ class MainController: UIViewController, UIScrollViewDelegate {
         let pageWidth = self.scrollView.frame.width
         let page = floor((scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1
         self.pageControl.currentPage = Int(page)
+    }
+
+    func scrollViewDidScroll(_ scrollView: UIScrollView!) {
+        let pageWidth = self.scrollView.frame.width
+        let page = floor((scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1
+        // !!! but here is another problem. You should find reference to appropriate pageControl
+        self.pageControl.currentPage = Int(page)
 
         let device = self.contentList[Int(page)] as? NSDictionary
         if device?.value(forKey: "name") != nil {
@@ -187,13 +202,6 @@ class MainController: UIViewController, UIScrollViewDelegate {
         } else {
             self.navigationItem.title = "房间"
         }
-    }
-
-    func scrollViewDidScroll(_ scrollView: UIScrollView!) {
-        let pageWidth = self.scrollView.frame.width
-        let page = floor((scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1
-        // !!! but here is another problem. You should find reference to appropriate pageControl
-        self.pageControl.currentPage = Int(page)
     }
 
     /*

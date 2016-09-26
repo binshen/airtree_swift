@@ -168,6 +168,12 @@ class MonitorController: UIViewController, UIScrollViewDelegate {
         let pageWidth = self.scrollView.frame.width
         let page = floor((scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1
         self.pageControl.currentPage = Int(page);
+    }
+
+    func scrollViewDidScroll(_ scrollView: UIScrollView!) {
+        let pageWidth = self.scrollView.frame.width
+        let page = floor((scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1
+        self.pageControl.currentPage = Int(page);
 
         if page == 0 {
             self.navigationItem.title = "PM2.5"
@@ -179,6 +185,7 @@ class MonitorController: UIViewController, UIScrollViewDelegate {
             self.navigationItem.title = "甲醛"
         }
     }
+
 /*
     // MARK: - Navigation
 
