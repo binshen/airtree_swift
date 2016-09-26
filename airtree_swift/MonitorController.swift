@@ -118,29 +118,37 @@ class MonitorController: UIViewController, UIScrollViewDelegate {
             frame.origin.y = 0
             controller?.view.frame = frame
 
-            let data = self.pageDevice?.value(forKey: "p1") as! NSDictionary?
+            let data = self.pageDevice?.value(forKey: "data") as! NSDictionary?
             let p1 = data?.value(forKey: "p1") as! Int
             if p1 > 0 {
                 let feiLevel = data?.value(forKey: "fei") as! Int
                 if feiLevel == 1 {
                     self.LabelStatus.text = "咱家空气棒棒哒，连呼吸都是甜的呢~"
+                    self.ImgStatus.image = UIImage.animatedImage(withAnimatedGIFURL: Bundle.main.url(forResource: "good", withExtension: "gif")!)
                 } else if feiLevel == 2 {
                     self.LabelStatus.text = "空气不错哦~只要再一丢丢的努力就完美啦~"
+                    self.ImgStatus.image = UIImage.animatedImage(withAnimatedGIFURL: Bundle.main.url(forResource: "very", withExtension: "gif")!)
                 } else if(feiLevel == 3) {
                     self.LabelStatus.text = "加把劲吧，咱家空气需要大大的改善~"
+                    self.ImgStatus.image = UIImage.animatedImage(withAnimatedGIFURL: Bundle.main.url(forResource: "general", withExtension: "gif")!)
                 } else {
                     self.LabelStatus.text = "你家的空气太糟糕啦，我要离家出走了~"
+                    self.ImgStatus.image = UIImage.animatedImage(withAnimatedGIFURL: Bundle.main.url(forResource: "poor", withExtension: "gif")!)
                 }
             } else {
                 let pm25 = data?.value(forKey: "x1") as! Int
                 if pm25 <= 35 {
                     self.LabelStatus.text = "咱家空气棒棒哒，连呼吸都是甜的呢~"
+                    self.ImgStatus.image = UIImage.animatedImage(withAnimatedGIFURL: Bundle.main.url(forResource: "good", withExtension: "gif")!)
                 } else if pm25 <= 75 {
                     self.LabelStatus.text = "空气不错哦~只要再一丢丢的努力就完美啦~"
+                    self.ImgStatus.image = UIImage.animatedImage(withAnimatedGIFURL: Bundle.main.url(forResource: "very", withExtension: "gif")!)
                 } else if pm25 <= 150 {
                     self.LabelStatus.text = "加把劲吧，咱家空气需要大大的改善~"
+                    self.ImgStatus.image = UIImage.animatedImage(withAnimatedGIFURL: Bundle.main.url(forResource: "general", withExtension: "gif")!)
                 } else {
                     self.LabelStatus.text = "你家的空气太糟糕啦，我要离家出走了~"
+                    self.ImgStatus.image = UIImage.animatedImage(withAnimatedGIFURL: Bundle.main.url(forResource: "poor", withExtension: "gif")!)
                 }
             }
 
