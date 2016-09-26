@@ -91,7 +91,7 @@ class DeviceAddController: UIViewController, UITextFieldDelegate {
                     self.setButTitle("开始连接")
                 }
             )
-            self.setButTitle("开始连接")
+            self.setButTitle("正在连接...")
         } else {
             smtlk.stop { (stopMsg: String?, isOk: Bool) in
                 if isOk {
@@ -119,7 +119,13 @@ class DeviceAddController: UIViewController, UITextFieldDelegate {
 //        butTitle.mutableString.setString(title)
 //        self.butConnect.setAttributedTitle(butTitle, for: UIControlState.normal)
         
-        MyButton.setTitle(title, button: self.butConnect)
+//        MyButton.setTitle(title, button: self.butConnect)
+
+//        let butTitle = NSMutableAttributedString(attributedString: NSAttributedString())
+//        butTitle.mutableString.setString(title)
+//        self.butConnect.setAttributedTitle(butTitle, for: UIControlState.normal)
+
+        self.butConnect.setTitle(title, for: UIControlState.normal)
     }
 
     func showAlertWithMsg(_ msg: String, _ title: String) {

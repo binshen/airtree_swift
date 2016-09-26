@@ -354,14 +354,14 @@
 		FDB50A501D92C19600627BED = {
 			isa = PBXGroup;
 			children = (
-				FDC1DA461D99553200FB3019 /* MyButton.h */,
-				FDC1DA471D99553200FB3019 /* MyButton.m */,
 				FDB50A5B1D92C19600627BED /* airtree_swift */,
 				FDB50A701D92C19600627BED /* airtree_swiftTests */,
 				FDB50A7B1D92C19600627BED /* airtree_swiftUITests */,
 				FDF37E621D93708400C00702 /* Frameworks */,
 				FDB50A5A1D92C19600627BED /* Products */,
 				FD568AF31D93B6F2003CEB5F /* airtree_swift_Bridging-Header.h */,
+				FDC1DA461D99553200FB3019 /* MyButton.h */,
+				FDC1DA471D99553200FB3019 /* MyButton.m */,
 				FD61E5351D942BCB00C9AA91 /* Reachability.h */,
 				FD61E5361D942BCB00C9AA91 /* Reachability.m */,
 				FD61E5381D942D6700C9AA91 /* HFSmartLink.h */,
