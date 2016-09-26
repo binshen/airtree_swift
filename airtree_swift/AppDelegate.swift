@@ -24,6 +24,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self._backgroundRunningTimeInterval = 0
         self.performSelector(inBackground: #selector(runningInBackground), with: nil)
 
+        UITextField.appearance().tintColor = UIColor.black
+
+        if UserDefaults.standard.value(forKey: "user_id") != nil && UserDefaults.standard.value(forKey: "user_id") != nil {
+           _loginUser = [
+                "_id": UserDefaults.standard.value(forKey: "user_id") as! String,
+                "username": UserDefaults.standard.value(forKey: "username") as! String,
+                "password": UserDefaults.standard.value(forKey: "password") as! String,
+                "nickname": UserDefaults.standard.value(forKey: "nickname") as! String
+           ]
+           let nav = self.window?.rootViewController?.storyboard?.instantiateViewController(withIdentifier: "NavMainViewController")
+           nav?.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+           UINavigationBar.appearance().tintColor = UIColor.white
+
+           self.window?.rootViewController = nav
+           self.window?.makeKeyAndVisible()
+        }
         return true
     }
 

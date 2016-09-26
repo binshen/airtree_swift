@@ -60,6 +60,13 @@ class ViewController: UIViewController, UITextFieldDelegate, UIAlertViewDelegate
                 } else {
                     _loginUser = user
 
+                    var userDefaults = UserDefaults.standard
+                    userDefaults.setValue(_loginUser["_id"] as! String, forKey: "user_id")
+                    userDefaults.setValue(_loginUser["username"] as! String, forKey: "username")
+                    userDefaults.setValue(_loginUser["password"] as! String, forKey: "password")
+                    userDefaults.setValue(_loginUser["nickname"] as! String, forKey: "nickname")
+                    userDefaults.synchronize()
+
                     let nav = self.storyboard!.instantiateViewController(withIdentifier: "NavMainViewController")
                     self.present(nav, animated: true)
                 }
