@@ -152,7 +152,7 @@ class MonitorController: UIViewController, UIScrollViewDelegate {
                 }
             }
 
-            controller?.initViews(page, self.contentList[page] as! NSDictionary)
+            controller?.initViews(self.pageIndex, self.pageDevice)
             self.scrollView.addSubview(controller!.view)
         }
 

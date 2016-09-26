@@ -62,17 +62,17 @@ class MonitorContentController: UIViewController {
 
             if page == 0 {
                 self.LabelTop.text = "PM2.5"
-                self.LabelMain.text = "\(data?.value(forKey: "x1") as! Float)"
+                self.LabelMain.text = "\(data?.value(forKey: "x1") as! Int)"
                 self.LabelBottom.text = "ug/m³";
                 self.ImgChart.image = UIImage.init(named: "bg_pm_s.png")
-            } else if page == 0 {
+            } else if page == 1 {
                 self.LabelTop.text = "温度"
-                self.LabelMain.text = "\(data?.value(forKey: "x11") as! Float)"
+                self.LabelMain.text = "\(data?.value(forKey: "x11") as! Int)"
                 self.LabelBottom.text = "℃";
                 self.ImgChart.image = UIImage.init(named: "bg_wendu_s.png")
-            } else if page == 0 {
+            } else if page == 2 {
                 self.LabelTop.text = "湿度"
-                self.LabelMain.text = "\(data?.value(forKey: "x10") as! Float)"
+                self.LabelMain.text = "\(data?.value(forKey: "x10") as! Int)"
                 self.LabelBottom.text = "%";
                 self.ImgChart.image = UIImage.init(named: "bg_shidu_s.png")
             } else {

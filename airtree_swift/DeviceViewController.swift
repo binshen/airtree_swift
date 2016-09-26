@@ -298,10 +298,10 @@ class DeviceViewController: UIViewController {
             }
         }
 
-        let pm25 = data?.value(forKey: "x1") as! Float
+        let pm25 = data?.value(forKey: "x1") as! Int
         self.pm25Value.text = "\(pm25)ug/m³"
-        self.temperatureValue.text = "\(data?.value(forKey: "x11") as! Float)℃"
-        self.humidityValue.text = "\(data?.value(forKey: "x10") as! Float)%"
+        self.temperatureValue.text = "\(data?.value(forKey: "x11") as! Int)℃"
+        self.humidityValue.text = "\(data?.value(forKey: "x10") as! Int)%"
         self.formaldehydeValue.text = "\(data?.value(forKey: "x9") as! Float)mg/m³"
 
         let p1 = data?.value(forKey: "p1") as! Int
