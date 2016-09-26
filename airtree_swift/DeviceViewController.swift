@@ -284,19 +284,15 @@ class DeviceViewController: UIViewController {
         } else {
             let p1 = data?.value(forKey: "p1") as! Int
             if p1 == 3 {
-                let x9 = data?.value(forKey: "p9") as! Float
-                if x9 == 0 {
-                    self.main.text = "0"
-                } else {
-                    self.main.text = "\(x9)"
-                }
+                let x9 = data?.value(forKey: "x9") as! Float
+                self.main.text = "\(x9)"
                 self.mainLable.text = "当前甲醛浓度（mg/m³）"
             } else if p1 == 4 {
-                let x11 = data?.value(forKey: "p11")
+                let x11 = data?.value(forKey: "x11") as! Int
                 self.main.text = "\(x11)"
                 self.mainLable.text = "当前温度（℃）"
             } else {
-                let x3 = data?.value(forKey: "p3") as! Int
+                let x3 = data?.value(forKey: "x3") as! Int
                 self.main.text = "\(x3)"
                 self.mainLable.text = "0.3um颗粒物个数"
             }
