@@ -309,28 +309,32 @@ class DeviceViewController: UIViewController {
             let feiLevel = data?.value(forKey: "fei") as! Int
             if feiLevel == 1 {
                 self.airQuality.text = "优"
-                self.mainImage.image = UIImage.animatedImageNamed("rank_1.gif", duration: 10)
+                self.mainImage.image = UIImage.animatedImage(withAnimatedGIFURL: Bundle.main.url(forResource: "rank_1", withExtension: "gif")!)
             } else if feiLevel == 2 {
                 self.airQuality.text = "良"
-                self.mainImage.image = UIImage.animatedImageNamed("rank_2.gif", duration: 10)
+                self.mainImage.image = UIImage.animatedImage(withAnimatedGIFURL: Bundle.main.url(forResource: "rank_2", withExtension: "gif")!)
             } else if feiLevel == 3 {
                 self.airQuality.text = "中"
-                self.mainImage.image = UIImage.animatedImageNamed("rank_3.gif", duration: 10)
+                self.mainImage.image = UIImage.animatedImage(withAnimatedGIFURL: Bundle.main.url(forResource: "rank_3", withExtension: "gif")!)
             } else if feiLevel == 4 {
                 self.airQuality.text = "差"
-                self.mainImage.image = UIImage.animatedImageNamed("rank_4.gif", duration: 10)
+                self.mainImage.image = UIImage.animatedImage(withAnimatedGIFURL: Bundle.main.url(forResource: "rank_4", withExtension: "gif")!)
             } else {
                 self.airQuality.text = "未知"
             }
         } else {
             if pm25 <= 35 {
                 self.airQuality.text = "优"
+                self.mainImage.image = UIImage.animatedImage(withAnimatedGIFURL: Bundle.main.url(forResource: "rank_1", withExtension: "gif")!)
             } else if pm25 <= 75 {
                 self.airQuality.text = "良"
+                self.mainImage.image = UIImage.animatedImage(withAnimatedGIFURL: Bundle.main.url(forResource: "rank_2", withExtension: "gif")!)
             } else if pm25 <= 150 {
                 self.airQuality.text = "中"
+                self.mainImage.image = UIImage.animatedImage(withAnimatedGIFURL: Bundle.main.url(forResource: "rank_3", withExtension: "gif")!)
             } else {
                 self.airQuality.text = "差"
+                self.mainImage.image = UIImage.animatedImage(withAnimatedGIFURL: Bundle.main.url(forResource: "rank_4", withExtension: "gif")!)
             }
         }
 
