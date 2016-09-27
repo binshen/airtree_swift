@@ -62,7 +62,9 @@ class DeviceAddController: UIViewController, UITextFieldDelegate {
             self.smtlk.start(withSSID: ssidStr, key: pswdStr, withV3x: true, processblock: { (pro:Int) in
                     self.progress.progress = Float(pro) / 100.0
                 }, successBlock: { (dev: HFSmartLinkDeviceInfo?) in
-                    let params = ["mac": dev?.mac, "userID": _loginUser["_id"] as! String]
+                    let mac = dev!.mac!
+                    let userID = _loginUser["_id"] as! String
+                    let params = ["mac": mac, "userID": userID]
                     let url = MORAL_API_BASE_PATH + "/user/add_device"
                     let request = MKNetworkRequest(urlString: url, params: params, bodyData: nil, httpMethod: "POST");
                     request?.addCompletionHandler { response in
@@ -70,7 +72,7 @@ class DeviceAddController: UIViewController, UITextFieldDelegate {
                         let data = jsonStr!.data(using: .utf8)!
                         if let parsedData = try? JSONSerialization.jsonObject(with: data) as! [String:Any] {
                             let success = parsedData["success"] as? Bool
-                            if success! {
+                            if success == true {
                                 if parsedData["status"] as? Int == 4 {
                                     self.showAlertWithMsg("该设备已被其他人绑定过", "错误信息")
                                 } else {
