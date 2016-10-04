@@ -111,7 +111,7 @@ class PersonController: UITableViewController {
                 cell.detailTextLabel?.text = ""
             case 2:
                 cell.textLabel?.text = "综合指数"
-                cell.detailTextLabel?.text = self.avg_number == 0 || self.avg_number == nil ? "0" : "\(self.avg_number!)"
+                cell.detailTextLabel?.text = self.avg_number == nil || self.avg_number == 0 ? "0" : "\(self.avg_number!)"
                 cell.isUserInteractionEnabled = false;
                 cell.accessoryType = UITableViewCellAccessoryType.none
             case 3:
