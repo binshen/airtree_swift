@@ -12,6 +12,9 @@ class PersonController: UITableViewController {
 
     @IBOutlet var PersonTableView: UITableView!
 
+    var timer: Timer!
+    var avg_number: Float!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,14 +28,39 @@ class PersonController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true);
 
-        let indexPath = IndexPath(row: 0, section: 0)
-        let cell = self.tableView.cellForRow(at: indexPath)
-        cell?.detailTextLabel?.text = _loginUser["nickname"] as! String
+//        let indexPath = IndexPath(row: 0, section: 0)
+//        let cell = self.tableView.cellForRow(at: indexPath)
+//        cell?.detailTextLabel?.text = _loginUser["nickname"] as! String
+
+        self.autoRefreshData()
+        self.timer = Timer.scheduledTimer(timeInterval: 30, target: self, selector: #selector(autoRefreshData), userInfo: nil, repeats: true)
+    }
+
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(true)
+
+        self.timer.invalidate()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    func autoRefreshData() {
+        let userID = _loginUser["_id"] as! String
+        let url = MORAL_API_BASE_PATH + "/user/\(userID)/get_avg_data"
+        let request = MKNetworkRequest(urlString: url, params: nil, bodyData: nil, httpMethod: "GET");
+        request? .addCompletionHandler { response in
+            let jsonStr = response?.responseAsString
+            let data = jsonStr!.data(using: .utf8)!
+            if let parsedData = try? JSONSerialization.jsonObject(with: data) as![String:Float] {
+                self.avg_number = parsedData["avg"];
+            }
+            self.tableView.reloadData()
+        }
+        let engine = MKNetworkHost()
+        engine.start(request)
     }
 
     override func prepare(`for` segue: UIStoryboardSegue, sender: Any?) {
@@ -82,8 +110,8 @@ class PersonController: UITableViewController {
                 cell.textLabel?.text = "改密码"
                 cell.detailTextLabel?.text = ""
             case 2:
-                cell.textLabel?.text = ""
-                cell.detailTextLabel?.text = ""
+                cell.textLabel?.text = "综合指数"
+                cell.detailTextLabel?.text = self.avg_number == 0 || self.avg_number == nil ? "0" : "\(self.avg_number!)"
                 cell.isUserInteractionEnabled = false;
                 cell.accessoryType = UITableViewCellAccessoryType.none
             case 3:

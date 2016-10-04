@@ -27,8 +27,8 @@ class ViewController: UIViewController, UITextFieldDelegate, UIAlertViewDelegate
         TxtUsername.keyboardType = UIKeyboardType.numberPad
         TxtPassword.keyboardType = UIKeyboardType.alphabet
 
-        TxtUsername.text = "13999999999"
-        TxtPassword.text = "888888"
+        //TxtUsername.text = "13999999999"
+        //TxtPassword.text = "888888"
     }
 
     override func viewWillAppear(_ animated: Bool) {
