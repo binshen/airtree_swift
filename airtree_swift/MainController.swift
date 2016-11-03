@@ -108,34 +108,44 @@ class MainController: UIViewController, UIScrollViewDelegate {
         request? .addCompletionHandler { response in
             let jsonStr = response?.responseAsString
             let data = jsonStr!.data(using: .utf8)!
+            
+            for subview in self.scrollView.subviews {
+                subview.removeFromSuperview()
+            }
+            
             if let parsedData = try? JSONSerialization.jsonObject(with: data) as![AnyObject] {
-                self.contentList = parsedData
-
-                for subview in self.scrollView.subviews {
-                    subview.removeFromSuperview()
-                }
                 
-                self.numberPages = self.contentList.count
-
-                var controllers = [DeviceViewController?]()
-                for _ in 0...self.numberPages {
-                    controllers.append(nil)
+                if parsedData.count > 0 {
+                    self.contentList = parsedData
+                    
+                    self.numberPages = self.contentList.count
+                    
+                    var controllers = [DeviceViewController?]()
+                    for _ in 0...self.numberPages {
+                        controllers.append(nil)
+                    }
+                    self.viewControllers = controllers
+                    
+                    self.scrollView.contentSize = CGSize(width: self.scrollView.frame.size.width * CGFloat(self.numberPages), height: self.scrollView.frame.size.height)
+                    
+                    self.pageControl.numberOfPages = self.numberPages
+                    self.pageControl.isHidden = false
+                    
+                    if self.pageControl.currentPage < 1 {
+                        let device = self.contentList[0] as? NSDictionary
+                        self.navigationItem.title = device?.value(forKey: "name") as? String == nil ? device?.value(forKey: "mac") as? String : device?.value(forKey: "name") as! String
+                    }
+                    
+                    for i in 0...self.numberPages {
+                        self.loadScrollViewWithPage(i)
+                    }
+                } else {
+                    self.pageControl.numberOfPages = 0
+                    self.navigationItem.title = "房间"
                 }
-                self.viewControllers = controllers
-
-                self.scrollView.contentSize = CGSize(width: self.scrollView.frame.size.width * CGFloat(self.numberPages), height: self.scrollView.frame.size.height)
-
-                self.pageControl.numberOfPages = self.numberPages
-                self.pageControl.isHidden = false
-                
-                if self.pageControl.currentPage < 1 {
-                    let device = self.contentList[0] as? NSDictionary
-                    self.navigationItem.title = device?.value(forKey: "name") as? String == nil ? device?.value(forKey: "mac") as? String : device?.value(forKey: "name") as! String
-                }
-
-                for i in 0...self.numberPages {
-                    self.loadScrollViewWithPage(i)
-                }
+            } else {
+                self.pageControl.numberOfPages = 0
+                self.navigationItem.title = "房间"
             }
 
             self.spinner.stopAnimating()

@@ -53,8 +53,8 @@ class ViewController: UIViewController, UITextFieldDelegate, UIAlertViewDelegate
             let jsonStr = response?.responseAsString
             let data = jsonStr!.data(using: .utf8)!
             if let parsedData = try? JSONSerialization.jsonObject(with: data) as! [String:Any] {
-                var userDefaults = UserDefaults.standard
-                let user = parsedData["user"] as? [String:String]
+                let userDefaults = UserDefaults.standard
+                let user = parsedData["user"] as? [String:Any]
                 if(user == nil) {
                     userDefaults.setValue(nil, forKey: "user_id")
 
