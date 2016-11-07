@@ -110,7 +110,7 @@ class PersonController: UITableViewController {
                 cell.textLabel?.text = "改密码"
                 cell.detailTextLabel?.text = ""
             case 2:
-                cell.textLabel?.text = "综合指数"
+                cell.textLabel?.text = "家庭综合指数"
                 cell.detailTextLabel?.text = self.avg_number == nil || self.avg_number == 0 ? "0" : "\(self.avg_number!)"
                 cell.isUserInteractionEnabled = false;
                 cell.accessoryType = UITableViewCellAccessoryType.none
